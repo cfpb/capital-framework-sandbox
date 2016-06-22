@@ -1,0 +1,33 @@
+# Base configuration
+permalink: /:title
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
+highlighter: rouge
+
+# Title
+name: Capital Framework Sandbox
+subtitle: A place to play and edit Capital Framework components
+
+# When using this template with a project page set the baseurl to '/project-name'
+# For user/organization pages set this to an empty string
+# When working locally use jekyll serve --baseurl '' so that you can view everything at localhost:4000
+# See http://jekyllrb.com/docs/github-pages/ for more info
+#baseurl: ''
+baseurl: '/capital-framework-sandbox'
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: The CFPB
+  url: http://cfpb.github.io/
+
+# ignores
+exclude:
+  - node_modules
+  - src
+  - gulp
+  - gulpfile.js
+  - package.json
+  - npm-debug.log
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
