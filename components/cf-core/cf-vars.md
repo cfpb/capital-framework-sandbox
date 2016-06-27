@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: child-component
 title:  "cf-vars"
 parent: "cf-core"
 ---
@@ -9,17 +9,24 @@ parent: "cf-core"
 
 ### Sizing variables
 
-#### @base-font-size-px
+<div class="content-l">
 
-<div class="vars-example base-font-size-px"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@base-font-size-px</h4>
+		<div class="vars-example base-font-size-px"></div>
+	</div>
 
-#### @base-line-height-px
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@base-line-height-px</h4>
+		<div class="vars-example base-line-height-px"></div>
+	</div>
 
-<div class="vars-example base-line-height-px"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@base-line-height</h4>
+		<div class="vars-example base-line-height"></div>
+	</div>
 
-#### @base-line-height
-
-<div class="vars-example base-line-height"></div>
+</div>
 
 #### @bp-xs-max
 
@@ -55,71 +62,126 @@ parent: "cf-core"
 
 
 ### Color variables
+<div class="content-l">
 
-#### @text
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@text</h4>
+		<div class="vars-example text-example text"></div>
+	</div>
 
-<div class="vars-example text-example text"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-text</h4>
 
-#### @link-text
+		<div class="vars-example text-example link-text"></div>
+	</div>
 
-<div class="vars-example text-example link-text"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-underline</h4>
 
-#### @link-underline
+		<div class="vars-example text-example link-underline"></div>
+	</div>
 
-<div class="vars-example text-example link-underline"></div>
+</div>
 
-#### @link-text-visited
+<div class="content-l">
 
-<div class="vars-example text-example link-text-visited"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-text-visited</h4>
 
-#### @link-underline-visited
+		<div class="vars-example text-example link-text-visited"></div>
+	</div>
 
-<div class="vars-example text-example link-underline-visited"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-underline-visited</h4>
 
-#### @link-text-hover
+		<div class="vars-example text-example link-underline-visited"></div>
+	</div>
 
-<div class="vars-example text-example link-text-hover"></div>
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-text-hover</h4>
 
-#### @link-underline-hover
+		<div class="vars-example text-example link-text-hover"></div>
+	</div>
+</div>
 
-<div class="vars-example text-example link-underline-hover"></div>
+<div class="content-l">
 
-#### @link-text-active
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-underline-hover</h4>
 
-<div class="vars-example text-example link-text-active"></div>
+		<div class="vars-example text-example link-underline-hover"></div>
+	</div>
 
-#### @link-underline-active
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-text-active</h4>
 
-<div class="vars-example text-example link-underline-active"></div>
+		<div class="vars-example text-example link-text-active"></div>
+	</div>
 
-#### @table-border
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@link-underline-active</h4>
 
-<div class="vars-example text-example table-border"></div>
+		<div class="vars-example text-example link-underline-active"></div>
+	</div>
 
-#### @thead-text
+</div>
 
-<div class="vars-example text-example thead-text"></div>
+<div class="content-l">
 
-#### @thead-bg
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@table-border</h4>
 
-<div class="vars-example text-example thead-bg"></div>
+		<div class="vars-example text-example table-border"></div>
+	</div>
 
-#### @input-bg
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@thead-text</h4>
 
-<div class="vars-example text-example input-bg"></div>
+		<div class="vars-example text-example thead-text"></div>
+	</div>
 
-#### @input-border
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@thead-bg</h4>
 
-<div class="vars-example text-example input-border"></div>
+		<div class="vars-example text-example thead-bg"></div>
+	</div>
 
-#### @input-border-focus
+</div>
 
-<div class="vars-example text-example input-border-focus"></div>
+<div class="content-l">
 
-#### @input-placeholder
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@input-bg</h4>
 
-<div class="vars-example text-example input-placeholder"></div>
+		<div class="vars-example text-example input-bg"></div>
+	</div>
 
-#### @figure__bordered
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@input-border</h4>
 
-<div class="vars-example text-example figure__bordered"></div>
+		<div class="vars-example text-example input-border"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@input-border-focus</h4>
+
+		<div class="vars-example text-example input-border-focus"></div>
+	</div>
+
+</div>
+
+<div class="content-l">
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@input-placeholder</h4>
+
+		<div class="vars-example text-example input-placeholder"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@figure__bordered</h4>
+
+		<div class="vars-example text-example figure__bordered"></div>
+	</div>
+
+</div>
