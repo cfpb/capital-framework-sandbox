@@ -1,16 +1,12 @@
 # Capital Framework Sandbox
 ## A place to play and edit Capital Framework components.
 
-**Description**: The static documentation site for the Capital Framework. Includes examples, code snippets, getting started and contribution instructions, etc.
+**Description**: The static sandbox used to test changes to Capital Framework. Includes all existing components.
 
 **Technology stack**:
 - Ruby - For installing Jekyll.
 - Jekyll - Static site server.
 - Node - For managing front-end dependencies.
-
-**Screenshot**:
-
-![](https://raw.githubusercontent.com/cfpb/capital-framework/gh-pages/screenshot.png)
 
 ## Installation
 
@@ -51,16 +47,16 @@ Hit `Deny` to close the dialog box.
 
 ## Getting help
 
-If you encounter issues with the Capital Framework components shown in the documentation site, please post an issue in the Capital Framework [issue tracker](https://github.com/cfpb/capital-framework/issues/).
+If you encounter issues with the Sandbox, please post an issue in this repo [issue tracker](https://github.com/jimmynotjim/capital-framework-sandbox/issues/). If you encounter issues with Capital Framework components themselves, please post an issue in the [Capital Framework issue tracker](https://github.com/cfpb/capital-framework/issues/).
 
 **Example**
 
-A live demo can be viewed [here](http://cfpb.github.io/capital-framework).
-For local installation, the local live is at `http://localhost:4000/capital-framework/` (see installation instructions).
+A live demo can be viewed [here](http://jimmynotjim.github.io/capital-framework-sandbox).
+For local installation, the local live is at `http://localhost:3000` (see installation instructions).
 
 ## Getting involved
 
-We welcome contributions to the Capital Framework or the documentation site itself. If interested, please read through our [contributing page](http://cfpb.github.io/capital-framework/contributing/) on the demo site.
+We welcome contributions to the Capital Framework and the sandbox itself. If interested, please read through our [contributing page](http://cfpb.github.io/capital-framework/contributing/) on the demo site.
 
 ----
 
