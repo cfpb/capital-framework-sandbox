@@ -26,6 +26,7 @@
     "cf-pagination": "latest",
     "cf-tables": "latest",
     "cf-typography": "latest",
+    "glob": "7.0.5",
     "highlight.js": "9.4.0",
     "html5shiv": "latest"
   },
