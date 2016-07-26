@@ -621,4 +621,4 @@ The visual should be 640x360 (16x9 ratio) and resize to fit the height of the FC
 
 ## Heroes
 
-[See the dedicated test page for heroes](heroes.html)
+[See the full-width hero demo page](heroes.html)
