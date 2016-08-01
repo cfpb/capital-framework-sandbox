@@ -1,5 +1,6 @@
 /* ==========================================================================
-   Capital Framework theme overrides
+   cf-theme-cfpb
+   Capital Framework variable overrides
    ========================================================================== */
 
 
@@ -8,18 +9,39 @@
 
 // Sizing variables
 
+// Type sizing
 @base-font-size-px:             16px;
 @base-line-height-px:           22px;
 @base-line-height:              unit(@base-line-height-px / @base-font-size-px);
-@mobile-max:                    599px;
-@tablet-min:                    600px;
+@size-xl:                       48px; // Super-size
+@size-i:                        34px; // h1-size
+@size-ii:                       26px; // h2-size
+@size-iii:                      22px; // h3-size
+@size-iv:                       18px; // h4-size
+@size-v:                        14px; // h5-size
+@size-vi:                       12px; // h6-size
 
-// Font variables
+// Breakpoints
+@bp-xs-max:                     600px;
+@bp-sm-min:                     @bp-xs-max + 1px;
+@bp-sm-max:                     900px;
+@bp-med-min:                    @bp-sm-max + 1px;
+@bp-med-max:                    1020px;
+@bp-lg-min:                     @bp-med-max + 1px;
+@bp-lg-max:                     1230px;
+@bp-xl-min:                     @bp-lg-max + 1px;
 
+// To be deprecated
+@mobile-max:                    @bp-xs-max;
+@tablet-min:                    @bp-sm-min;
+
+
+// Font family variables
 @webfont-regular:               'AvenirNextLTW01-Regular';
 @webfont-italic:                'AvenirNextLTW01-Italic';
 @webfont-medium:                'AvenirNextLTW01-Medium';
 @webfont-demi:                  'AvenirNextLTW01-Demi';
+
 
 // Color variables
 
@@ -36,11 +58,11 @@
 @link-text-active:              @dark-navy;
 @link-underline-active:         @dark-navy;
 
-// thead
-@thead-text:                    @white;
-@thead-bg:                      @dark-gray;
-@td-bg:                         @gray-5;
-@td-bg-alt:                     @gray-10;
+
+// table
+@table-border:                  @gray-40;
+@thead-bg:                      @gray-5;
+@thead-text:                    @text;
 
 // input
 @input-bg:                      @white;
@@ -80,12 +102,15 @@
 @btn__disabled-bg:              @gray-10;
 @btn__disabled-outline:         @gray-10;
 
+
 // Sizing variables
 
 // .btn
-@btn-font-size:                 14px;
+@btn-font-size:                 16px;
 @btn-v-padding:                 8px;
 @btn-v-padding-modifier-ie:     .8;
+
+// .btn__super
 @super-btn-font-size:           18px;
 
 
@@ -114,10 +139,11 @@
 @expandable-group-bg:           @white;
 @expandable-group-divider:      @gray-40;
 
+
 // Sizing variables
 
 // .expandable_link
-@expandable_link-font-size:     @btn-font-size;
+@expandable_link-font-size:     14px;
 
 
 /* cf-forms
@@ -135,7 +161,7 @@
 @input-success:                 @green;
 
 // .disabled
-@input-disabled:                 @gray-10;
+@input-disabled:                @gray-10;
 
 // .form-label-helper-text
 @label-helper:                  @dark-gray;
@@ -146,6 +172,7 @@
 // .form-l-inset_container.is-checked
 @input-inset-selected:          @pacific-20;
 
+
 // Sizing variables
 
 // .input__super
@@ -155,7 +182,7 @@
 /* cf-grid
    ========================================================================== */
 
-@grid_box-sizing-polyfill-path: '/static/vendor/box-sizing-polyfill';
+@grid_box-sizing-polyfill-path: '../vendor/box-sizing-polyfill';
 @grid_wrapper-width:            1230px;
 @grid_gutter-width:             30px;
 @grid_total-columns:            12;
@@ -168,6 +195,7 @@
 @cf-icon-prefix:                cf-icon;
 @cf-icon-path:                  '../fonts';
 @cf-icon-ie7-support:           true;
+@cf-icon-border-color:          @gray-10;
 
 
 /* cf-layout
@@ -207,14 +235,21 @@
    ========================================================================== */
 
 // Color variables
-
-@pagination-text:               @gray-80;
+@pagination-text:               @gray;
 @pagination-bg:                 @gray-10;
 
 // Sizing variables
-
 @pagination-font-size:          16px;
 @pagination-bp:                 640px;
+
+
+/* cf-tables
+   ========================================================================== */
+
+// Color variables
+@table-cell-bg:              @white;
+@table-cell-bg_alt:          @gray-5;
+@table-scrolling-border:     @gray-40;
 
 
 /* cf-typography

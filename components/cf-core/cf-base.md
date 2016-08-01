@@ -6,20 +6,14 @@ parent: "cf-core"
 
 ## Base Typography
 
-### Webfonts
+### Webfont mixins
 
-Sets the font-stack, weight, and style of an element.
-
-```
-.webfont-regular();
-.webfont-italic();
-.webfont-medium();
-.webfont-demi();
-```
-
-To use your own fonts in the webfont mixins, set your own font with the `@webfont-regular/italic/medium/demi` variables in your `theme-overrides.less` file.
-
-_These mixins also add the appropriate .lt-ie9 overrides. .lt-ie9 overrides are necessary to override font-style and font-weight each time the webfont is used. These overrides are built into the webfont mixins so you get them automatically. Note that this requires you to use conditional classes on the <html> element: <https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes.>_
+<ul>
+    <li class="webfont-regular-example">.u-webfont-regular()</li>
+    <li class="webfont-italic-example">.u-webfont-italic()</li>
+    <li class="webfont-medium-example">.u-webfont-medium()</li>
+    <li class="webfont-demi-example">.u-webfont-demi()</li>
+</ul>
 
 ### Type hierarchy
 
@@ -97,45 +91,17 @@ _Responsive text. Displays as a Heading 3 on large screens; displays at Heading 
 
 ### Default links
 
-#### Default state
-
-<a href="#">Default link style</a>
-
-#### Visited state
-
-<a href="#" class="visited">Visited link style</a>
-
-#### Hovered state
-
-<a href="#" class="hover">Visited link style</a>
-
-#### Focused state
-
-<a href="#" class="focus">Visited link style</a>
-
-#### Active state
-
-<a href="#" class="active">Visited link style</a>
-
-_Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not be used in production._
-
-### Underlined links
-
-Links are automatically underlined when they are a child of a `p`, `li`, or `dd`. To enable them elsewhere, simply add a bottom-border-width to the link.
-
-#### States
-
-<p>
+<div class="u-mb30">
     <a href="#">Default</a>,
     <a href="#" class="visited">Visited</a>,
     <a href="#" class="hover">Hovered</a>,
     <a href="#" class="focus">Focused</a>,
     <a href="#" class="active">Active</a>
-</p>
+</div>
 
-_Note that the .visited, .hover, .focus, .active classes are for demonstration purposes only and should not be used in production._
+### Underlined links
 
-#### Underline conditions
+Links are automatically underlined when they are a child of a `p`, `li`, or `dd`.
 
 <p>
     <a href="#">A child of a paragraph</a>
@@ -153,28 +119,12 @@ _Note that the .visited, .hover, .focus, .active classes are for demonstration p
         <a href="#">A child of a definition list description</a>
     </dd>
 </dl>
-
-#### Exceptions for underlined links
-
-Links within a nav element are not underlined.
-
-<nav>
-    <p>
-        <a href="#">A child of a paragraph</a>
-    </p>
+<nav class="u-mb30">
     <ul>
-        <li>
-            <a href="#">A child of a list item</a>
-        </li>
+        <li><a href="#">Exception:</a></li>
+        <li><a href="#">Links within a <code>nav</code> element</a></li>
+        <li><a href="#">do not get underlined</a></li>
     </ul>
-    <dl>
-        <dt>
-            Definition list term
-        </dt>
-        <dd>
-            <a href="#">A child of a definition list description</a>
-        </dd>
-    </dl>
 </nav>
 
 ### Lists
@@ -191,15 +141,13 @@ Links within a nav element are not underlined.
 #### Ordered list
 
 <p>Paragraph example for visual reference</p>
-<ul>
+<ol>
     <li>List item 1</li>
     <li>List item 2</li>
     <li>List item 3</li>
-</ul>
+</ol>
 
 ### Tables
-
-#### Standard lable
 
 <table>
     <thead>
@@ -242,78 +190,78 @@ Links within a nav element are not underlined.
     veniam officiis ducimus voluptatum ut necessitatibus non!
 </blockquote>
 
-_Note that the use of a block quote is to quote an external work. See `.pull-quote` if you need to highlight an excerpt from the current work._
-_Note that it is best practice to document the URL of a quoted work using the cite attribute._
 
+## Forms
 
-## Base forms
-
-_Visit https://github.com/cfpb/cf-forms for advanced form field patterns._
+_See [cf-forms](../cf-forms/) for advanced form field patterns._
 
 ### Form labels
 
-#### Default label
-
 <label>Form label</label>
 
-#### Label for a radio or checkbox
-
-<input type="radio" id="radio-input">
-<label for="radio-input">Radio label</label>
-<input type="checkbox" id="checkbox-input">
-<label for="checkbox-input">Checkbox label</label>
-
-### Form Elements
-
-_Note that the `.focus` class is for documentation purposes only and should not be used in production._
+### Form elements
 
 #### `type="text"`
 
 <input type="text" value="Lorem ipsum">
 <input class="focus" type="text" value="Lorem ipsum">
 <br><br>
-<input placeholder="Lorem ipsum" type="text" value="">
+<input placeholder="Example placeholder" type="text" value="">
 
 #### `type="search"`
 
 <input type="search" value="Lorem ipsum">
 <input class="focus" type="search" value="Lorem ipsum">
 <br><br>
-<input placeholder="Lorem ipsum" type="search" value="">
+<input placeholder="Example placeholder" type="search" value="">
 
 #### `type="email"`
 
 <input type="email" value="Lorem ipsum">
 <input class="focus" type="email" value="Lorem ipsum">
 <br><br>
-<input placeholder="Lorem ipsum" type="email" value="">
-
+<input placeholder="example@place.holder" type="email" value="">
 
 #### `type="url"`
 
 <input type="url" value="Lorem ipsum">
 <input class="focus" type="url" value="Lorem ipsum">
 <br><br>
-<input placeholder="Lorem ipsum" type="url" value="">
+<input placeholder="http://place.holder/" type="url" value="">
 
 #### `type="tel"`
 
 <input type="tel" value="Lorem ipsum">
 <input class="focus" type="tel" value="Lorem ipsum">
 <br><br>
-<input placeholder="Lorem ipsum" type="tel" value="">
+<input placeholder="123-456-7890" type="tel" value="">
 
 #### `type="number"`
 
 <input type="number" value="1000">
 <input class="focus" type="number" value="1000">
 <br><br>
-<input placeholder="Lorem ipsum" type="number" value="">
+<input placeholder="9999" type="number" value="">
 
 #### `textarea`
 
-<textarea>Lorem ipsum</textarea>
+<textarea class="u-mb30">Lorem ipsum</textarea>
 <textarea class="focus">Lorem ipsum</textarea>
+
+#### `select`
+
+<select>
+    <option value="option1">Lorem</option>
+    <option value="option2">Ipsum</option>
+    <option value="option3">Dolor</option>
+    <option value="option4">Sit</option>
+</select>
+<select class="focus">
+    <option value="option1">Lorem</option>
+    <option value="option2">Ipsum</option>
+    <option value="option3">Dolor</option>
+    <option value="option4">Sit</option>
+</select>
 
 #### Multiselect
 
@@ -330,22 +278,24 @@ _Note that the `.focus` class is for documentation purposes only and should not 
     <option value="option4">Sit</option>
 </select>
 
+#### Radio buttons and checkboxes
+
+<input type="radio" id="radio-input">
+<label for="radio-input">Radio label</label>
+<input type="checkbox" id="checkbox-input">
+<label for="checkbox-input">Checkbox label</label>
+
+
 ## Base images
 
 ### Full-width images
 
 Gives all images a default max-width of 100% of their container.
 
-<img src="http://placekitten.com/800/40" alt="">
+<img src="http://placekitten.com/1200/40" alt="">
 
 ### Figure
 
 <figure>
-    <img src="http://placekitten.com/340/320">
-</figure>
-
-### Bordered figure
-
-<figure class="figure__bordered">
     <img src="http://placekitten.com/340/320">
 </figure>

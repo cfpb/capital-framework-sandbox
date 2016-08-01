@@ -4,10 +4,8 @@ title:  "cf-vars"
 parent: "cf-core"
 ---
 
-## Original Documentation Markup
 
-
-### Sizing variables
+## Type sizing variables
 
 <div class="content-l">
 
@@ -26,46 +24,86 @@ parent: "cf-core"
 		<div class="vars-example base-line-height"></div>
 	</div>
 
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-xl</h4>
+		<div class="vars-example size-xl"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-i</h4>
+		<div class="vars-example size-i"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-ii</h4>
+		<div class="vars-example size-ii"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-iii</h4>
+		<div class="vars-example size-iii"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-iv</h4>
+		<div class="vars-example size-iv"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-v</h4>
+		<div class="vars-example size-v"></div>
+	</div>
+
+	<div class="content-l_col content-l_col-1-3">
+		<h4>@size-vi</h4>
+		<div class="vars-example size-vi"></div>
+	</div>
+
 </div>
 
-#### @bp-xs-max
+
+## Breakpoint variables
+
+### @bp-xs-max
 
 <div class="vars-example bp-example bp-xs-max"></div>
 
-#### @bp-sm-min
+### @bp-sm-min
 
 <div class="vars-example bp-example bp-sm-min"></div>
 
-#### @bp-sm-max
+### @bp-sm-max
 
 <div class="vars-example bp-example bp-sm-max"></div>
 
-#### @bp-med-min
+### @bp-med-min
 
 <div class="vars-example bp-example bp-med-min"></div>
 
-#### @bp-med-max
+### @bp-med-max
 
 <div class="vars-example bp-example bp-med-max"></div>
 
-#### @bp-lg-min
+### @bp-lg-min
 
 <div class="vars-example bp-example bp-lg-min"></div>
 
-#### @bp-lg-max
+### @bp-lg-max
 
 <div class="vars-example bp-example bp-lg-max"></div>
 
-#### @bp-xl-min
+### @bp-xl-min
 
 <div class="vars-example bp-example bp-xl-min"></div>
 
 
-### Color variables
+## Color variables
+
 <div class="content-l">
 
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@text</h4>
+
 		<div class="vars-example text-example text"></div>
 	</div>
 
@@ -80,10 +118,6 @@ parent: "cf-core"
 
 		<div class="vars-example text-example link-underline"></div>
 	</div>
-
-</div>
-
-<div class="content-l">
 
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@link-text-visited</h4>
@@ -102,9 +136,6 @@ parent: "cf-core"
 
 		<div class="vars-example text-example link-text-hover"></div>
 	</div>
-</div>
-
-<div class="content-l">
 
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@link-underline-hover</h4>
@@ -124,10 +155,6 @@ parent: "cf-core"
 		<div class="vars-example text-example link-underline-active"></div>
 	</div>
 
-</div>
-
-<div class="content-l">
-
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@table-border</h4>
 
@@ -145,10 +172,6 @@ parent: "cf-core"
 
 		<div class="vars-example text-example thead-bg"></div>
 	</div>
-
-</div>
-
-<div class="content-l">
 
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@input-bg</h4>
@@ -168,20 +191,10 @@ parent: "cf-core"
 		<div class="vars-example text-example input-border-focus"></div>
 	</div>
 
-</div>
-
-<div class="content-l">
-
 	<div class="content-l_col content-l_col-1-3">
 		<h4>@input-placeholder</h4>
 
 		<div class="vars-example text-example input-placeholder"></div>
-	</div>
-
-	<div class="content-l_col content-l_col-1-3">
-		<h4>@figure__bordered</h4>
-
-		<div class="vars-example text-example figure__bordered"></div>
 	</div>
 
 </div>
