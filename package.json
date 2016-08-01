@@ -10,7 +10,8 @@
   },
   "scripts": {
     "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'gulp watch'",
-    "build": "gulp build"
+    "build": "gulp build",
+    "cf-link": "npm link cf-core"
   },
   "license": "CC0",
   "keywords": [
