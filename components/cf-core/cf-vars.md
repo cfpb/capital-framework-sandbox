@@ -10,52 +10,52 @@ parent: "cf-core"
 <div class="content-l">
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@base-font-size-px</h4>
+		<h3>@base-font-size-px</h3>
 		<div class="vars-example base-font-size-px"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@base-line-height-px</h4>
+		<h3>@base-line-height-px</h3>
 		<div class="vars-example base-line-height-px"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@base-line-height</h4>
+		<h3>@base-line-height</h3>
 		<div class="vars-example base-line-height"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-xl</h4>
+		<h3>@size-xl</h3>
 		<div class="vars-example size-xl"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-i</h4>
+		<h3>@size-i</h3>
 		<div class="vars-example size-i"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-ii</h4>
+		<h3>@size-ii</h3>
 		<div class="vars-example size-ii"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-iii</h4>
+		<h3>@size-iii</h3>
 		<div class="vars-example size-iii"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-iv</h4>
+		<h3>@size-iv</h3>
 		<div class="vars-example size-iv"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-v</h4>
+		<h3>@size-v</h3>
 		<div class="vars-example size-v"></div>
 	</div>
 
 	<div class="content-l_col content-l_col-1-3">
-		<h4>@size-vi</h4>
+		<h3>@size-vi</h3>
 		<div class="vars-example size-vi"></div>
 	</div>
 
