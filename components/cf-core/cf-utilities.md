@@ -4,258 +4,255 @@ title:  "cf-utilities"
 parent: "cf-core"
 ---
 
-## Utilities
 
-### Helper classes
+## Helper classes
 
-#### Clearfix
+### Clearfix
 
 <div class="u-clearfix">
-    <div style="float:left; width:100%; height:60px; background:black;"></div>
+    <div style="float: right; width: 50%; height: 60px; background: lightblue;"></div>
 </div>
-<em>This text would normally flow up into the black box if the box above</em>
+<i>
+    This text would normally flow up into the empty space to the left of the blue box,
+    if the black box's parent did not have the `u-clearfix` class.
+</i>
 
-#### Visually hidden
+### Visually hidden
 
 <a href="#">
     <span class="cf-icon cf-icon-twitter-square"></span>
     <span class="u-visually-hidden">Share on Twitter</span>
 </a>
 
-The text "Share on Twitter" is only screenreader accessible above
+The text "Share on Twitter" in the above example is only accessible to screenreaders.
 
-#### Inline block
+### Inline block
 
-Adds a `.lt-ie8` fallback to hack inline block for IE 7 and below.
+<div class="u-mb30">
+    Sets <code>display: inline-block;</code> and adds a <code>.lt-ie8</code>
+    fallback to hack inline block for IE 7 and below.
+    <div class="u-inline-block" style="background: lightblue; padding: 0 0.5em;">
+        Inline block
+    </div>
+</div>
 
-<div class="u-inline-block" style="background-color: lightblue; width: 50%"></div>
+### Float right
 
-#### Float right
+<div class="u-clearfix u-mb30">
+    <div class="u-right" style="background: lightblue; padding: 1em;">I'm floating!</div>
+</div>
 
-<div class="u-right"><h1>Float Right</h1></div>
-<div class="block">&nbsp;</div>
+### Break word
 
-#### Break word
-
-Force word breaks within an element. Useful for small containers where text may over-run the width of the container.
-
-<div style="width: 100px;">
-    This link should break:
-    <br>
-    <a class="u-break-word" href="#">
-        something@something.com
-    </a>
-    <br>
-    <br>
-    This link should not:
-    <br>
+<div class="u-break-word u-mb30" style="width: 100px; padding: 0.5em; border: 1px solid silver;">
     <a href="#">
         something@something.com
     </a>
 </div>
 
-_This only works in IE8 when the element with the .u-break-word class has layout. See <http://stackoverflow.com/questions/3997223/word-wrapbreak-word-not-working-in-ie8> for more information._
+### Margin utilities
 
-#### Margin utilities
-
-Force a margin top or bottom on an element in pixels.
-
-`.u-m[p][#]`
-
-<h1 class="u-mb0" style="background-color:grey;">Heading with zero bottom margin</h1>
-
-_`[p]` is the position, use `t` for top or `b` for bottom. `[#]` is the pixel value, available options are 0, 5, 10, 15, 20, 30, 45, 60_
-
-#### Width utilities
-
-Set the width of an element in percentages.
-
-**NOTE: Inline style properties for demonstration only.**
-
-<div class="u-w100pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w100pct</code>
-</div>
-<div class="u-w90pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w90pct</code>
-</div>
-<div class="u-w80pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w80pct</code>
-</div>
-<div class="u-w70pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w70pct</code>
-</div>
-<div class="u-w60pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w60pct</code>
-</div>
-<div class="u-w50pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w50pct</code>
-</div>
-<div class="u-w40pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w40pct</code>
-</div>
-<div class="u-w30pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w30pct</code>
-</div>
-<div class="u-w20pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w20pct</code>
-</div>
-<div class="u-w10pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w10pct</code>
-</div>
-<div class="u-w75pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w75pct</code>
-</div>
-<div class="u-w25pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w25pct</code>
-</div>
-<div class="u-w66pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w66pct</code>
-</div>
-<div class="u-w33pct" style="background: #f4edf3; margin-bottom: 1px;">
-    <code>.u-w33pct</code>
+<div class="content-l u-mb30">
+    <div class="content-l_col content-l_col-1-2">
+        <div class="u-mb0" style="background-color: lightblue;">0 bottom margin</div>
+        <div class="u-mb5" style="background-color: lightblue;">5 bottom margin</div>
+        <div class="u-mb10" style="background-color: lightblue;">10 bottom margin</div>
+        <div class="u-mb15" style="background-color: lightblue;">15 bottom margin</div>
+        <div class="u-mb20" style="background-color: lightblue;">20 bottom margin</div>
+        <div class="u-mb30" style="background-color: lightblue;">30 bottom margin</div>
+        <div class="u-mb45" style="background-color: lightblue;">45 bottom margin</div>
+        <div class="u-mb60" style="background-color: lightblue;">60 bottom margin</div>
+    </div>
+    <div class="content-l_col content-l_col-1-2">
+        <div class="u-mt0" style="background-color: lightblue;">0 top margin</div>
+        <div class="u-mt5" style="background-color: lightblue;">5 top margin</div>
+        <div class="u-mt10" style="background-color: lightblue;">10 top margin</div>
+        <div class="u-mt15" style="background-color: lightblue;">15 top margin</div>
+        <div class="u-mt20" style="background-color: lightblue;">20 top margin</div>
+        <div class="u-mt30" style="background-color: lightblue;">30 top margin</div>
+        <div class="u-mt45" style="background-color: lightblue;">45 top margin</div>
+        <div class="u-mt60" style="background-color: lightblue;">60 top margin</div>
+    </div>
 </div>
 
-#### Width-specific display
+### Width utilities
 
-Show or hide content based on the current display size.
+<div class="u-w100pct" style="background: lightblue; margin-bottom: 1px;">
+    100 %
+</div>
+<div class="u-w90pct" style="background: lightblue; margin-bottom: 1px;">
+    90 %
+</div>
+<div class="u-w80pct" style="background: lightblue; margin-bottom: 1px;">
+    80 %
+</div>
+<div class="u-w70pct" style="background: lightblue; margin-bottom: 1px;">
+    70 %
+</div>
+<div class="u-w60pct" style="background: lightblue; margin-bottom: 1px;">
+    60 %
+</div>
+<div class="u-w50pct" style="background: lightblue; margin-bottom: 1px;">
+    50 %
+</div>
+<div class="u-w40pct" style="background: lightblue; margin-bottom: 1px;">
+    40 %
+</div>
+<div class="u-w30pct" style="background: lightblue; margin-bottom: 1px;">
+    30 %
+</div>
+<div class="u-w20pct" style="background: lightblue; margin-bottom: 1px;">
+    20 %
+</div>
+<div class="u-w10pct" style="background: lightblue; margin-bottom: 1px;">
+    10 %
+</div>
+<div class="u-w75pct" style="background: lightblue; margin-bottom: 1px;">
+    75 %
+</div>
+<div class="u-w25pct" style="background: lightblue; margin-bottom: 1px;">
+    25 %
+</div>
+<div class="u-w66pct" style="background: lightblue; margin-bottom: 1px;">
+    66 %
+</div>
+<div class="u-w33pct u-mb30" style="background: lightblue; margin-bottom: 1px;">
+    33 %
+</div>
 
-__NOTE: Inline style properties for demonstration only__
+### Width-specific display
 
-##### Show on mobile
+#### Show on mobile
 
-Displays content on screen widths under 601px.
+View this page at a width narrower than [`@bp-xs-max`](cf-vars.html#breakpoint-variables)
+to see the show-on-mobile example.
 
-<div style="border: 1px solid black; height: 22px; padding: 5px;">
+<div class="u-mb30" style="border: 1px solid black; height: 22px; padding: 5px;">
     <p class="u-show-on-mobile">Visible on mobile</p>
 </div>
 
-##### Hide on mobile
+#### Hide on mobile
 
-Hides content on screens widths under 601px.
-
-<div style="border: 1px solid black; height: 22px; padding: 5px;">
+<div class="u-mb30" style="border: 1px solid black; height: 22px; padding: 5px;">
     <p class="u-hide-on-mobile">Hidden on mobile</p>
 </div>
 
-### Mixins
 
-#### Align with button
+## Mixins
 
-Align an element vertically with the text within a button that may be to either side.
+### Align with button
 
-```
-.u-align-with-btn(@font-size: @base-font-size-px);
-```
+<button class="a-btn">Button</button>
+<span class="u-align-with-btn">Aligned with button</span>
 
-_Pass font-size as the argument for calculating spacing, default value is `@base-font-size-px`._
+### Flexible proportional containers
 
-#### Flexible proportional containers
+#### 16:9 flexible video player
 
-Utilize intrinsic ratios to create a flexible container that retains an aspect ratio. When image tags scale they retain their aspect ratio, but if you need a flexible video you will need to use this mixin.
-
-_Read more about intrinsic rations: <http://alistapart.com/article/creating-intrinsic-ratios-for-video>_
-
-```
-.u-flexible-container-mixin(@width: 16, @height: 9);
-```
-
-In addition to the mixin, there are two default classes available for building 16:9 and 4:3 containers.
-
-__NOTE: Inline style properties for demonstration only__
-
-To create a 16:9 flexible video player, wrap the video element in an element with `u-flexible-container` and add the `u-flexible-container_inner` to the video element.
-
-<div class="u-flexible-container">
+<div class="u-flexible-container u-mb30">
     <video class="u-flexible-container_inner"
-           style="background:#75787B;"
+           style="background: lightgray;"
            controls>
     </video>
 </div>
 
-To create a flexible container with only a background (no inner video or object element), ommit the inner container.
+### 4:3 flexible video player
 
-<div class="u-flexible-container"
-     style="background-image: url(http://placekitten.com/700/394);
+<div class="u-flexible-container u-flexible-container__4-3 u-mb30">
+    <video class="u-flexible-container_inner"
+           style="background: lightgray;"
+           controls>
+    </video>
+</div>
+
+### Flexible container with only a background (no inner video or object element)
+
+<div class="u-flexible-container u-mb30"
+     style="background-image: url(http://placekitten.com/870/490);
             background-position: center center;
             background-repeat: no-repeat;"></div>
 
-To create a 4:3 flexible video player, add the `__4_3` modifier to the container
-
-<div class="u-flexible-container u-flexible-container__4-3">
-    <video class="u-flexible-container_inner"
-           style="background:#75787B;"
-           controls>
-    </video>
-</div>
-
-_When using the mixin, pass the width as the first argument, and the height as the second argument, default values are `16, 9`._
-
-_Original mixin credit: <https://gist.github.com/craigmdennis/6655047>_
-
-#### Link Modifiers
+### Link modifiers
 
 Modify link properties using the following mixins.
 
-##### Link Colors
-
-Calling the mixin without arguments will set the following states - default(pacific), :hover(pacific-50), :focus:(pacific), :visited teal, :active navy.
+#### Link colors
 
 `u-link__colors()`
 
-Passing a single argument into the mixin will set the color for the default, :visited, :hover, :focus, :active states.
+<ul class="link-color-example-0">
+    <li><a href="#">Link</a></li>
+    <li><a class="visited" href="#">Visited</a></li>
+    <li><a class="hover" href="#">Hover</a></li>
+    <li><a class="focus" href="#">Focus</a></li>
+    <li><a class="active" href="#">Active</a></li>
+</ul>
 
-`u-link__colors(@c)`
+`u-link__colors(@pacific)`
 
-Passing two arguments into the mixin will set the color for the default, :visited, and :active states as the first argument, and :hover and :focus as the second argument.
+<ul class="link-color-example-1">
+    <li><a href="#">Link</a></li>
+    <li><a class="visited" href="#">Visited</a></li>
+    <li><a class="hover" href="#">Hover</a></li>
+    <li><a class="focus" href="#">Focus</a></li>
+    <li><a class="active" href="#">Active</a></li>
+</ul>
 
-`u-link__colors(@c, @h)`
+`.u-link__colors(@pacific, @red)`
 
-Passing five arguments will set the color for the default, :visited, :hover, :focus, and :active states respectively.
+<ul class="link-color-example-2">
+    <li><a href="#">Link</a></li>
+    <li><a class="visited" href="#">Visited</a></li>
+    <li><a class="hover" href="#">Hover</a></li>
+    <li><a class="focus" href="#">Focus</a></li>
+    <li><a class="active" href="#">Active</a></li>
+</ul>
 
-`u-link__colors(@c, @v, @h, @f, @a)`
+`.u-link__colors(@pacific, @dark-green, @dark-pacific, @dark-red, @dark-gold)`
 
-Passing ten arguments will set the text (default, :visited, :hover, :focus, and :active states in the first five arguments) and border colors (default, :visited, :hover, :focus, and :active states in the following five arguments) separately.
+<ul class="link-color-example-5">
+    <li><a href="#">Link</a></li>
+    <li><a class="visited" href="#">Visited</a></li>
+    <li><a class="hover" href="#">Hover</a></li>
+    <li><a class="focus" href="#">Focus</a></li>
+    <li><a class="active" href="#">Active</a></li>
+</ul>
 
-`u-link__colors(@c, @v, @h, @f, @a, @bc, @bv, @bh, @bf, @ba)`
+```
+.u-link__colors(@pacific,  @dark-green, @dark-pacific, @dark-red, @dark-gold,
+                @dark-red, @dark-gold,  @green,        @gold,     @red)
+```
 
-__A base mixin of `u-link__colors-base()` exists, but please refrain from using this mixin directly in order to promote consistent naming throughout this project. If you need to set colors for all states of a link, use `.u-link__colors(@c, @v, @h, @f, @a)`.__
+<ul class="link-color-example-10">
+    <li><a href="#">Link</a></li>
+    <li><a class="visited" href="#">Visited</a></li>
+    <li><a class="hover" href="#">Hover</a></li>
+    <li><a class="focus" href="#">Focus</a></li>
+    <li><a class="active" href="#">Active</a></li>
+</ul>
 
-##### Link borders
+#### Link borders
 
-Force the default bottom border on the default and :hover states.
+<div class="u-mb15">
+    <a class="u-link__border" href="#">
+        Link borders forced on a link that doesn't normally get borders
+    </a>
+</div>
 
-`.u-link__border()`
+<p>
+    <a class="u-link__no-border" href="#">
+        Link borders removed from a link that does normally have borders
+    </a>
+</p>
 
-Turn off the default bottom border on the default and :hover states.
+<p>
+    <a class="u-link__hover-border" href="#">
+        Link with default borders removed from normal, visited, and active states,
+        but still with borders on the hover and focus states
+    </a>
+</p>
 
-`.u-link__no-border()`
+### Small text utility
 
-Turn off the default bottom border on the default state but force a bottom border on the :hover state.
-
-`.u-link__hover-border()`
-
-##### Link children
-
-Calling this mixin without arguments will set the default color for the hover state of a child within a link, without affecting the link itself.
-
-`.u-link__hover-child()`
-
-Passing a single argument into the mixin will set a custom color for the hover state of a child within a link, without affecting the link itself.
-
-`.u-link__hover-child(@c)`
-
-#### Small Text Utility
-
-##### Class
-
-Sets the element to 14px (in ems).
-
-`.u-small-text`
-
-_To be used on default 16px text only. To use on text set to another size, use the mixin below._
-
-##### Mixin
-
-Sets the element to 14px (in ems) based on the text size passed as `@context`.
-
-`.u-small-text(@context)`
+<p class="u-small-text">The fine print.</p>
+<p>Here's a paragraph with some <small>inline small text</small> within.</p>
