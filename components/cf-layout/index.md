@@ -582,19 +582,7 @@ Main content...
     </section>
 </div>
 
-## Hero
 
-<section class="content_hero hero">
-    <div class="hero_wrapper wrapper">
-        <div class="hero_text">
-            <h1 class="hero_heading">Hero title</h1>
-            <p class="hero_subhead">
-                Hero text goes here
-            </p>
-            <p class="hero_cta">
-                <a>Call to action</a>
-            </p>
-        </div>
-        <div class="hero_image" style="background-image: url('http://placekitten.com/g/400/195')"></div>
-    </div>
-</section>
+## Heroes
+
+[See the dedicated test page for heroes](heroes.html)
