@@ -42,6 +42,9 @@
 @input-border:           #5b616b; // $color-gray
 @input-border-focus:     #3e94cf; // $color-focus
 @input-placeholder:      grayscale(#c7336e);
+
+// .figure__bordered
+@figure__bordered:       #d6d7d9; // $color-gray-lighter
 </code></pre>
 <h2>Media Queries</h2>
 <p>Mixins for consistent media queries that take <code>px</code> values and convert them to <code>em</code>s.</p>
@@ -182,27 +185,30 @@ such as Apple retina screens</p>
 </code></pre>
 <h4>Break word</h4>
 <p>Force word breaks within an element. Useful for small containers where text may over-run the width of the container.</p>
-<div class="u-break-word u-mb30" style="width: 100px; padding: 0.5em; border: 1px solid silver;">
+<div style="width: 100px;">
     This link should break:
-    <a href="#">
+    <br>
+    <a class="u-break-word" href="#">
         something@something.com
     </a>
-</div>
-<div class="u-mb30" style="width: 100px; padding: 0.5em; border: 1px solid silver;">
+    <br>
+    <br>
     This link should not:
+    <br>
     <a href="#">
         something@something.com
     </a>
 </div>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>u-break-word<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token style-attr language-css" ><span class="token attr-name" > <span class="token attr-name" >style</span></span><span class="token punctuation" >="</span><span class="token attr-value" ><span class="token property" >width</span><span class="token punctuation" >:</span> <span class="token number" >100</span>px<span class="token punctuation" >;</span></span><span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     This link should break:
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>u-break-word<span class="token punctuation" >"</span></span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         something@something.com
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span><span class="token punctuation" >&gt;</span></span>
     This link should not:
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>br</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         something@something.com
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
@@ -432,10 +438,10 @@ such as Apple retina screens</p>
 <h2>Base Typography</h2>
 <h3>Webfonts</h3>
 <p>Sets the font-stack, weight, and style of an element.</p>
-<pre><code>.u-webfont-regular();
-.u-webfont-italic();
-.u-webfont-medium();
-.u-webfont-demi();
+<pre><code>.webfont-regular();
+.webfont-italic();
+.webfont-medium();
+.webfont-demi();
 </code></pre>
 <p>To use your own fonts in the webfont mixins, set your own font with the <code>@webfont-regular/italic/medium/demi</code> variables in your <code>theme-overrides.less</code> file.</p>
 <p><em>These mixins also add the appropriate .lt-ie9 overrides. .lt-ie9 overrides are necessary to override font-style and font-weight each time the webfont is used. These overrides are built into the webfont mixins so you get them automatically. Note that this requires you to use conditional classes on the <html> element: <a href="https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes.">https://github.com/h5bp/html5-boilerplate/blob/v4.3.0/doc/html.md#conditional-html-classes.</a></em></p>
@@ -861,12 +867,18 @@ such as Apple retina screens</p>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>img</span> <span class="token attr-name" >src</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>http://placekitten.com/800/40<span class="token punctuation" >"</span></span> <span class="token attr-name" >alt</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span><span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
 <h3>Figure</h3>
-<p>Resets browser default side margins for <code>figure</code> to 0,
-and removes bottom inline spacing from <code>img</code> elements within.</p>
 <figure>
     <img src="http://placekitten.com/340/320">
 </figure>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>figure</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>img</span> <span class="token attr-name" >src</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>http://placekitten.com/340/320<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>figure</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h3>Bordered figure</h3>
+<figure class="figure__bordered">
+    <img src="http://placekitten.com/340/320">
+</figure>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>figure</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>figure__bordered<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>img</span> <span class="token attr-name" >src</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>http://placekitten.com/340/320<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>figure</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
