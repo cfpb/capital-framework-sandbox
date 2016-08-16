@@ -18,7 +18,7 @@ parent: "Components"
 ## Example
 
 <input class="input__super" type="text" value="Super input" title="Test input">
-<button class="btn btn__super">Super</button>
+<button class="a-btn a-btn__super">Super</button>
 
 
 ## Input states
@@ -123,7 +123,7 @@ parent: "Components"
         <input type="text" title="Test input">
     </div>
     <div class="input-with-btn_btn">
-        <button class="btn">Search</button>
+        <button class="a-btn">Search</button>
     </div>
 </div>
 
@@ -134,7 +134,7 @@ parent: "Components"
         <input class="input__super" type="text" title="Test input">
     </div>
     <div class="input-with-btn_btn">
-        <button class="btn btn__super">Search</button>
+        <button class="a-btn a-btn__super">Search</button>
     </div>
 </div>
 
@@ -146,7 +146,7 @@ parent: "Components"
     <div class="btn-inside-input">
         <input type="text"
                value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
-        <button class="btn btn__link">
+        <button class="a-btn a-btn__link">
             Clear
             <span class="cf-icon cf-icon-delete"></span>
         </button>
@@ -160,7 +160,7 @@ parent: "Components"
         <input class="input__super"
                type="text"
                value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
-        <button class="btn btn__super btn__link btn__secondary">
+        <button class="a-btn a-btn__super a-btn__link a-btn__secondary">
             Clear
             <span class="cf-icon cf-icon-delete"></span>
         </button>
