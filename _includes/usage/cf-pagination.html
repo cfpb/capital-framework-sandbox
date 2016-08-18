@@ -1,9 +1,22 @@
-<p>The cf-pagination component provides a responsive approach to multipage page navigation.</p>
-<h2>Dependencies</h2>
+<p>The cf-pagination component provides a responsive approach to multipage page navigation for Capital Framework.</p>
+<p><a href="../cf-core"><code>cf-core</code></a>, <a href="../cf-buttons"><code>cf-buttons</code></a>, and <a href="../cf-icons"><code>cf-icons</code></a> components are all dependencies of this component.&quot;</p>
+<blockquote>
+<p>NOTE: If you use <code>cf-pagination.less</code> directly,
+be sure to run the file through
+<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>,
+or your compiled Capital Framework CSS will
+not work perfectly in older browsers.</p>
+</blockquote>
+<h2>Table of contents</h2>
 <ul>
-<li>cf-core</li>
-<li>cf-buttons</li>
-<li>cf-icons</li>
+<li><a href="#variables">Variables</a>
+<ul>
+<li><a href="#sizing-variables">Sizing variables</a></li>
+<li><a href="#color-variables">Color variables</a></li>
+</ul>
+</li>
+<li><a href="#default-pagination">Default pagination</a></li>
+<li><a href="#responsive-behavior">Responsive behavior</a></li>
 </ul>
 <h2>Variables</h2>
 <p>Theme variables for setting the color and sizes. Color variables are from 18F's <a href="https://github.com/18F/web-design-standards/blob/18f-pages-staging/src/stylesheets/core/_variables.scss">US Web Design Standards</a>. Overwrite them in your own project by duplicating the variable <code>@key: value</code>.</p>
@@ -21,7 +34,6 @@
 <h2>Default pagination</h2>
 <p>Default pagination consists of &quot;Previous&quot; and &quot;Next&quot; links, styled as buttons, and an inline form (input, submit button) that allows users to navigate to specific pages by number.</p>
 <p>To enable the component to jump directly to the paginated content, place <code>#pagination_content</code> directly above your paginated content.</p>
-<h3>Example</h3>
 <div id="pagination_content"></div>
 <!-- Paginated content here -->
 <nav class="m-pagination" role="navigation" aria-label="Pagination">
@@ -63,7 +75,6 @@
                   type="submit">Go</button>
     </form>
 </nav>
-<h3>Markup</h3>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>pagination_content<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 
 <span class="token comment" spellcheck="true" >&lt;!-- Paginated content here --&gt;</span>
