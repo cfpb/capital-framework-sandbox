@@ -7,10 +7,15 @@
 
 var gulp = require( 'gulp' );
 var config = require( '../config' );
+var stylesArr = [ config.styles.cwd + '/**/*.less' ];
+
+config.components.forEach( function( src, index ) {
+  stylesArr.push( src + '/**/*.less' );
+} );
 
 gulp.task( 'watch', [ 'browserSync' ], function() {
   gulp.watch( config.scripts.src, [ 'scripts' ] );
-  gulp.watch( config.styles.cwd + '/**/*.less', [ 'styles' ] );
+  gulp.watch( stylesArr, [ 'styles' ] );
   gulp.watch( config.images.src, [ 'images' ] );
   gulp.watch( config.copy.files.src, [ 'copy:files' ] );
 } );

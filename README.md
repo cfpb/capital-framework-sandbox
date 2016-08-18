@@ -15,7 +15,7 @@ This site is powered by Jekyll a Ruby based static site generator. For front-end
 ```shell
 $ brew install ruby
 $ brew install node
-$ gem install jekyll
+$ gem install bundler
 $ npm install --global gulp-cli
 ```
 
