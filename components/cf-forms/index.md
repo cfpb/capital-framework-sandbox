@@ -61,6 +61,185 @@ parent: "Components"
 <input class="success" type="text" value="Validated input" title="Test input">
 <span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
 
+## Atomic form group with big checkboxes
+
+### One-Column
+
+#### Active
+
+<fieldset class="o-form-input-group">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Favorite Pet
+        </legend>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets"
+                   id="input_pets-1">
+            <label class="a-input_label"
+                   for="input_pets-1">
+                Dog
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets"
+                   id="input_pets-2">
+            <label class="a-input_label"
+                   for="input_pets-2">
+                Cat
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets"
+                   id="input_pets-3">
+            <label class="a-input_label"
+                   for="input_pets-3">
+                Mouse
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+#### Disabled
+
+<fieldset class="o-form-input-group">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Favorite Pet
+        </legend>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets__disabled"
+                   id="input_pets-1__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_pets-1__disabled">
+                Dog
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets__disabled"
+                   id="input_pets-2__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_pets-2__disabled">
+                Cat
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_pets__disabled"
+                   id="input_pets-3__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_pets-3__disabled">
+                Mouse
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+### Two-Column
+
+#### Active
+
+<fieldset class="o-form-input-group o-form-input-group__two-column">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Coffee or Tea?
+        </legend>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_coffee-tea"
+                   id="input_coffee-tea-1">
+            <label class="a-input_label"
+                   for="input_coffee-tea-1">
+                Coffee
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_coffee-tea"
+                   id="input_coffee-tea-2">
+            <label class="a-input_label"
+                   for="input_coffee-tea-2">
+                Tea
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+#### Disabled
+
+<fieldset class="o-form-input-group o-form-input-group__two-column">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Coffee or Tea?
+        </legend>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_coffee-tea__disabled"
+                   id="input_coffee-tea-1__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_coffee-tea-1__disabled">
+                Coffee
+            </label>
+        </div>
+    </div>
+    <div class="m-big-checkbox">
+        <div class="m-big-checkbox_container">
+            <input class="a-input"
+                   type="checkbox"
+                   name="form_coffee-tea__disabled"
+                   id="input_coffee-tea-2__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_coffee-tea-2__disabled">
+                Tea
+            </label>
+        </div>
+    </div>
+</fieldset>
+
 ## Form group
 
 ### Form group block
