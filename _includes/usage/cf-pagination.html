@@ -1,0 +1,125 @@
+<p>The cf-pagination component provides a responsive approach to multipage page navigation for Capital Framework.</p>
+<p><a href="../cf-core"><code>cf-core</code></a>, <a href="../cf-buttons"><code>cf-buttons</code></a>, and <a href="../cf-icons"><code>cf-icons</code></a> components are all dependencies of this component.&quot;</p>
+<blockquote>
+<p>NOTE: If you use <code>cf-pagination.less</code> directly,
+be sure to run the file through
+<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>,
+or your compiled Capital Framework CSS will
+not work perfectly in older browsers.</p>
+</blockquote>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#variables">Variables</a>
+<ul>
+<li><a href="#sizing-variables">Sizing variables</a></li>
+<li><a href="#color-variables">Color variables</a></li>
+</ul>
+</li>
+<li><a href="#default-pagination">Default pagination</a></li>
+<li><a href="#responsive-behavior">Responsive behavior</a></li>
+</ul>
+<h2>Variables</h2>
+<p>Theme variables for setting the color and sizes. Color variables are from 18F's <a href="https://github.com/18F/web-design-standards/blob/18f-pages-staging/src/stylesheets/core/_variables.scss">US Web Design Standards</a>. Overwrite them in your own project by duplicating the variable <code>@key: value</code>.</p>
+<h3>Color variables</h3>
+<p>Pagination text color.</p>
+<pre><code>@pagination-text-color: #757575; // $color-gray-medium
+</code></pre>
+<p>Pagination form background color.</p>
+<pre><code>@pagination-bg-color: #f1f1f1; // $color-gray-lightest
+</code></pre>
+<h3>Sizing variables</h3>
+<p>The font size of pagination text.</p>
+<pre><code>@pagination-font-size__px:          16px;
+</code></pre>
+<h2>Default pagination</h2>
+<p>Default pagination consists of &quot;Previous&quot; and &quot;Next&quot; links, styled as buttons, and an inline form (input, submit button) that allows users to navigate to specific pages by number.</p>
+<p>To enable the component to jump directly to the paginated content, place <code>#pagination_content</code> directly above your paginated content.</p>
+<div id="pagination_content"></div>
+<!-- Paginated content here -->
+<nav class="m-pagination" role="navigation" aria-label="Pagination">
+    <a class="btn
+              m-pagination_btn-prev"
+       href="?page=1#pagination_content">
+        <span class="cf-icon cf-icon-left btn_icon__left "></span>
+        Newer
+    </a>
+    <a class="btn
+             m-pagination_btn-next"
+       href="?page=3#pagination_content">
+        Older
+        <span class="cf-icon cf-icon-right btn_icon__right"></span>
+    </a>
+    <form class="m-pagination_form"
+            action="#pagination_content">
+        <label class="m-pagination_label"
+                 for="m-pagination_current-page">
+            Page
+            <span class="u-visually-hidden">
+                number 2 out
+            </span>
+            <input class="m-pagination_current-page"
+                     id="m-pagination_current-page"
+                     name="page"
+                     type="number"
+                     min="1"
+                     max="149"
+                     pattern="[0-9]*"
+                     inputmode="numeric"
+                     value="2">
+            of 149
+        </label>
+        <button class="btn
+                         btn__link
+                         m-pagination_submit-btn"
+                  id="m-pagination_submit-btn"
+                  type="submit">Go</button>
+    </form>
+</nav>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>pagination_content<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+
+<span class="token comment" spellcheck="true" >&lt;!-- Paginated content here --&gt;</span>
+
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>nav</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination<span class="token punctuation" >"</span></span> <span class="token attr-name" >role</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>navigation<span class="token punctuation" >"</span></span> <span class="token attr-name" >aria-label</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Pagination<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn
+              m-pagination_btn-prev<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>?page<span class="token punctuation" >=</span>1#pagination_content<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-left btn_icon__left <span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
+        Newer
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn
+             m-pagination_btn-next<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>?page<span class="token punctuation" >=</span>3#pagination_content<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        Older
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-right btn_icon__right<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>form</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_form<span class="token punctuation" >"</span></span>
+            <span class="token attr-name" >action</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#pagination_content<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>label</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_label<span class="token punctuation" >"</span></span>
+                 <span class="token attr-name" >for</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_current-page<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            Page
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>u-visually-hidden<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+                number 2 out
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_current-page<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_current-page<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >name</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>page<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>number<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >min</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>1<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >max</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>149<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >pattern</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>[0-9]*<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >inputmode</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>numeric<span class="token punctuation" >"</span></span>
+                     <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>2<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            of 149
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn
+                       btn__link
+                       m-pagination_submit-btn<span class="token punctuation" >"</span></span>
+                  <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pagination_submit-btn<span class="token punctuation" >"</span></span>
+                  <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>submit<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Go<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>form</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>nav</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h2>Responsive behavior</h2>
+<ul>
+<li><code>@bp-xs-max</code>: On small screens, the pagination links display next to each other, stacked on top of the form.</li>
+</ul>
