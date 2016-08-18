@@ -83,6 +83,7 @@ module.exports = {
       dest: loc.dist + '/static/js/'
     }
   },
+  components: glob.sync( loc.lib + '/cf-*' ),
   usage: {
     files: {
       src: [

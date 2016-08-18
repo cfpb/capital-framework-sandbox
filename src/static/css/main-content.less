@@ -3,138 +3,206 @@
    ========================================================================== */
 
 .section-image {
-    width: 65%;
-    margin: 0 auto;
-    padding-bottom: 1.4em;
+  width: 65%;
+  padding-bottom: 1.4em;
+  margin: 0 auto;
 }
 
 .vars-example {
-	background-color: @gray-10;
-	margin-bottom: 15px;
+  background-color: @gray-10;
+  margin-bottom: 15px;
 }
 
 .base-font-size-px {
-	height: @base-font-size-px;
-	width: @base-font-size-px;
+  width: @base-font-size-px;
+  height: @base-font-size-px;
 }
 
 .base-line-height-px {
-	height: @base-line-height-px;
-	width: @base-line-height-px;
+  width: @base-line-height-px;
+  height: @base-line-height-px;
 }
 
 .base-line-height {
-	height: @base-line-height * 1em;
-	width: @base-line-height * 1em;
+  width: unit( @base-line-height, em );
+  height: unit( @base-line-height, em );
+}
+
+.size-xl {
+  width: @size-xl;
+  height: @size-xl;
+}
+
+.size-i {
+  width: @size-i;
+  height: @size-i;
+}
+
+.size-ii {
+  width: @size-ii;
+  height: @size-ii;
+}
+
+.size-iii {
+  width: @size-iii;
+  height: @size-iii;
+}
+
+.size-iv {
+  width: @size-iv;
+  height: @size-iv;
+}
+
+.size-v {
+  width: @size-v;
+  height: @size-v;
+}
+
+.size-vi {
+  width: @size-vi;
+  height: @size-vi;
 }
 
 .bp-example,
 .text-example {
-	height: 30px
+  height: 30px
 }
 
 .bp-xs-max {
-	width: @bp-xs-max;
+  width: @bp-xs-max;
 }
 
 .bp-sm-min {
-	width: @bp-sm-min;
+  width: @bp-sm-min;
 }
 
 .bp-sm-max {
-	width: @bp-sm-max;
+  width: @bp-sm-max;
 }
 
 .bp-med-min {
-	width: @bp-med-min;
+  width: @bp-med-min;
 }
 
 .bp-med-max {
-	width: @bp-med-max;
+  width: @bp-med-max;
 }
 
 .bp-lg-min {
-	width: @bp-lg-min;
+  width: @bp-lg-min;
 }
 
 .bp-lg-max {
-	width: @bp-lg-max;
+  width: @bp-lg-max;
 }
 
 .bp-xl-min {
-	width: @bp-xl-min;
+  width: @bp-xl-min;
 }
 
 .text-example {
-	width: 30px;
+  width: 30px;
 
-	&.text {
-		background-color: @text;
-	}
+  &.text {
+    background-color: @text;
+  }
 
-	&.link-text {
-		background-color: @link-text;
-	}
+  &.link-text {
+    background-color: @link-text;
+  }
 
-	&.link-underline {
-		background-color: @link-underline;
-	}
+  &.link-underline {
+    background-color: @link-underline;
+  }
 
-	&.link-text-visited {
-		background-color: @link-text-visited;
-	}
+  &.link-text-visited {
+    background-color: @link-text-visited;
+  }
 
-	&.link-underline-visited {
-		background-color: @link-underline-visited;
-	}
+  &.link-underline-visited {
+    background-color: @link-underline-visited;
+  }
 
-	&.link-text-hover {
-		background-color: @link-text-hover;
-	}
+  &.link-text-hover {
+    background-color: @link-text-hover;
+  }
 
-	&.link-underline-hover {
-		background-color: @link-underline-hover;
-	}
+  &.link-underline-hover {
+    background-color: @link-underline-hover;
+  }
 
-	&.link-text-active {
-		background-color: @link-text-active;
-	}
+  &.link-text-active {
+    background-color: @link-text-active;
+  }
 
-	&.link-underline-active {
-		background-color: @link-underline-active;
-	}
+  &.link-underline-active {
+    background-color: @link-underline-active;
+  }
 
-	&.table-border {
-		background-color: @table-border;
-	}
+  &.table-border {
+    background-color: @table-border;
+  }
 
-	&.thead-text {
-		background-color: @thead-text;
-		box-shadow: 0 0 0 1px @gray-20;
-	}
+  &.thead-text {
+    background-color: @thead-text;
+    box-shadow: 0 0 0 1px @gray-20;
+  }
 
-	&.thead-bg {
-		background-color: @thead-bg;
-	}
+  &.thead-bg {
+    background-color: @thead-bg;
+  }
 
-	&.input-bg {
-		background-color: @input-bg;
-		box-shadow: 0 0 0 1px @gray-20;
-	}
+  &.input-bg {
+    background-color: @input-bg;
+    box-shadow: 0 0 0 1px @gray-20;
+  }
 
-	&.input-border {
-		background-color: @input-border;
-	}
+  &.input-border {
+    background-color: @input-border;
+  }
 
-	&.input-border-focus {
-		background-color: @input-border-focus;
-	}
+  &.input-border-focus {
+    background-color: @input-border-focus;
+  }
 
-	&.input-placeholder {
-		background-color: @input-placeholder;
-	}
+  &.input-placeholder {
+    background-color: @input-placeholder;
+  }
+}
 
-	&.figure__bordered {
-		background-color: @figure__bordered;
-	}
+.link-color-example-0 a {
+  .u-link__colors();
+}
+
+.link-color-example-1 a {
+  .u-link__colors(@pacific);
+}
+
+.link-color-example-2 a {
+  .u-link__colors(@pacific, @red);
+}
+
+.link-color-example-5 a {
+  .u-link__colors(@pacific, @dark-green, @dark-pacific, @dark-red, @dark-gold);
+}
+
+.link-color-example-10 a {
+  .u-link__colors(@pacific,  @dark-green, @dark-pacific, @dark-red, @dark-gold,
+                  @dark-red, @dark-gold,  @green,        @gold,     @red);
+}
+
+.webfont-regular-example {
+  .webfont-regular();
+}
+
+.webfont-italic-example {
+  .webfont-italic();
+}
+
+.webfont-medium-example {
+  .webfont-medium();
+}
+
+.webfont-demi-example {
+  .webfont-demi();
 }

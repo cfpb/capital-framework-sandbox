@@ -1,5 +1,6 @@
 /* ==========================================================================
-   Capital Framework theme overrides
+   cf-theme-cfpb
+   Capital Framework variable overrides
    ========================================================================== */
 
 
@@ -44,7 +45,7 @@
 
 // input
 @input-bg:                      @white;
-@input-border:                  @gray-80;
+@input-border:                  @gray-40;
 @input-border-focus:            @pacific;
 @input-placeholder:             @gray-60;
 
@@ -83,7 +84,7 @@
 // Sizing variables
 
 // .btn
-@btn-font-size:                 14px;
+@btn-font-size:                 16px;
 @btn-v-padding:                 8px;
 @btn-v-padding-modifier-ie:     .8;
 @super-btn-font-size:           18px;
@@ -151,111 +152,13 @@
 // .input__super
 @input__super-font-size:        @super-btn-font-size;
 
-
 /* cf-grid
    ========================================================================== */
 
 @grid_box-sizing-polyfill-path: '/static/vendor/box-sizing-polyfill';
-@grid_wrapper-width:            1230px;
-@grid_gutter-width:             30px;
-@grid_total-columns:            12;
-@grid_debug:                    false;
-
 
 /* cf-icons
    ========================================================================== */
 
-@cf-icon-prefix:                cf-icon;
 @cf-icon-path:                  '../fonts';
 @cf-icon-ie7-support:           true;
-
-
-/* cf-layout
-   ========================================================================== */
-
-// Color variables
-
-// .block
-@block__bg:                     @gray-10;
-@block__border:                 @gray-40;
-@block__border-top:             @block__border;
-@block__border-right:           @block__border;
-@block__border-bottom:          @block__border;
-@block__border-left:            @block__border;
-
-// .content_main
-@content_main-border:           @gray-40;
-
-// .content_sidebar
-@content_sidebar-bg:            @gray-10;
-@content_sidebar-border:        @gray-40;
-
-// .content_bar
-@content_bar:                   @green;
-
-// .content_line
-@content_line:                  @gray-40;
-
-// .grid_column__top-divider
-@grid_column__top-divider:      @gray-40;
-
-// .grid_column__top-divider
-@grid_column__left-divider:     @gray-40;
-
-
-/* cf-pagination
-   ========================================================================== */
-
-// Color variables
-
-@pagination-text:               @gray-80;
-@pagination-bg:                 @gray-10;
-
-// Sizing variables
-
-@pagination-font-size:          16px;
-@pagination-bp:                 640px;
-
-
-/* cf-typography
-   ========================================================================== */
-
-// Color variables
-
-// .pull-quote
-@pull-quote_body:               @black;
-@pull-quote_citation:           @gray-80;
-
-// .micro-copy
-@micro-copy-text:               @gray-80;
-
-// .date
-@date-text:                     @gray-80;
-
-// .category-slug
-@category-slug-text:            @black;
-@category-slug-hover:           @link-text-hover;
-
-// .header-slug
-@header-slug-thin-border:       @gray-10;
-@header-slug-thick-border:      @green;
-
-// .padded-header
-@padded-header-text:            @dark-gray;
-@padded-header-bg:              @gray-10;
-@padded-header-border:          @gray-40;
-
-// .fancy-slug
-@fancy-slug-text:               @black;
-@fancy-slug-bg:                 @white;
-@fancy-slug-border:             @gray-40;
-
-// .meta-header
-@meta-header-border:            @gray-40;
-
-// .jump-link
-@jump-link__bg:                 @gray-10;
-@jump-link__bg-border:          @gray-10;
-
-// .list__branded
-@list__branded-bullet:          @green;
