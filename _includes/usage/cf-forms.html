@@ -1,7 +1,51 @@
-<h1>Forms</h1>
-<h2>Vars</h2>
+<p>The cf-forms component provides extensions to the basic form styles for Capital Framework.</p>
+<p><a href="../cf-core"><code>cf-core</code></a>, <a href="../cf-buttons"><code>cf-buttons</code></a>, and <a href="../cf-icons"><code>cf-icons</code></a> components are all dependencies of this component.&quot;</p>
+<blockquote>
+<p>NOTE: If you use <code>cf-forms.less</code> directly,
+be sure to run the file through
+<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>,
+or your compiled Capital Framework CSS will
+not work perfectly in older browsers.</p>
+</blockquote>
+<h2>Table of contents</h2>
+<ul>
+<li><a href="#variables">Variables</a>
+<ul>
+<li><a href="#color-variables">Color variables</a></li>
+<li><a href="#sizing-variables">Sizing variables</a></li>
+</ul>
+</li>
+<li><a href="#labels">Labels</a>
+<ul>
+<li><a href="#label-header">Label header</a></li>
+</ul>
+</li>
+<li><a href="#inputs">Inputs</a>
+<ul>
+<li><a href="#super-input">Super input</a></li>
+<li><a href="#input-states">Input states</a></li>
+<li><a href="#input-icons">Input icons</a></li>
+</ul>
+</li>
+<li><a href="#groups">Groups</a>
+<ul>
+<li><a href="#form-group-block">Form group block</a></li>
+<li><a href="#real-world-example">Real world example</a></li>
+</ul>
+</li>
+<li><a href="#buttons">Buttons</a>
+<ul>
+<li><a href="#default-input-and-button">Default input and button</a></li>
+<li><a href="#super-input-and-button">Super input and button</a></li>
+<li><a href="#button-inside-input">Button inside input</a></li>
+<li><a href="#super-button-inside-of-a-super-input">Super button inside of a super input</a></li>
+</ul>
+</li>
+</ul>
+<h2>Variables</h2>
 <p>Theme variables for setting the color and sizes throughout the project. Overwrite them in your own project by duplicating the variable <code>@key: value</code>.</p>
 <h3>Color variables</h3>
+<p><code>$color-</code> variables are from 18F's <a href="https://github.com/18F/web-design-standards/blob/18f-pages/assets/_scss/core/_variables.scss">US Web Design Standards</a></p>
 <pre><code>// .error
 @input-error:                   #ea130b;
 
@@ -18,7 +62,7 @@
 <pre><code>// .input__super
 @input__super-font-size:        18px;
 </code></pre>
-<h2>Form labels</h2>
+<h2>Labels</h2>
 <h3>Label header</h3>
 <label class="form-label-header">
     Form label header
@@ -27,40 +71,50 @@
     Form label header
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Super input</h2>
+<h2>Inputs</h2>
+<h3>Super input</h3>
 <p>An input that matches the height of a super button.</p>
 <input class="input__super" type="text" value="Super input" title="Test input">
 <button class="btn btn__super">Super</button>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input__super<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Super input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>input</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__super<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Super<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Input states</h2>
+<h3>Input states</h3>
 <p>See the 'Form icons' section below for guidance on adding icons to states.</p>
-<h3>Error state</h3>
+<h4>Error state</h4>
 <input class="error" type="text" value="Invalid input" title="Test input">
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>error<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Invalid input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Warning state</h3>
+<h4>Warning state</h4>
 <input class="warning" type="text" value="Invalid input" title="Test input">
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>warning<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Invalid input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Success state</h3>
+<h4>Success state</h4>
 <input class="success" type="text" value="Validated input" title="Test input">
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>success<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Validated input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Disabled state</h3>
-<input class="disabled" disabled="true" autocomplete="off" type="text" value="Validated input" title="Test input">
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>disabled<span class="token punctuation" >"</span></span> <span class="token attr-name" >disabled</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>true<span class="token punctuation" >"</span></span> <span class="token attr-name" >autocomplete</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>off<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Validated input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+<h4>Disabled state</h4>
+<p><input class="disabled"
+       disabled="true"
+       autocomplete="off"
+       type="text"
+       value="Validated input"
+       title="Test input"></p>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>disabled<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >disabled</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>true<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >autocomplete</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>off<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Validated input<span class="token punctuation" >"</span></span>
+       <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Form icons</h2>
+<h3>Input icons</h3>
 <p>Form input icons add small positioning tweaks to Capital Framework icons.</p>
-<h3>Form input icons</h3>
 <input type="text" value="" title="Test input">
 <span class="cf-form_input-icon cf-icon cf-icon-email"></span>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span><span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-form_input-icon cf-icon cf-icon-email<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Form input error icon</h3>
+<h4>Error icon</h4>
 <ul>
 <li>The icon must be placed directly after the form input in the markup and the input must use the 'error' class.</li>
 <li>For invalid fields only use the alert role to call attention to fields that need immediate attention: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_alert_role</li>
@@ -70,19 +124,19 @@
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>error<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Invalid input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-form_input-icon cf-icon cf-icon-delete-round<span class="token punctuation" >"</span></span> <span class="token attr-name" >role</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>alert<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Form input warning icon</h3>
+<h4>Warning icon</h4>
 <input class="warning" type="text" value="Invalid input" title="Test input">
 <span class="cf-form_input-icon cf-icon cf-icon-error-round" role="alert"></span>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>warning<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Invalid input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-form_input-icon cf-icon cf-icon-error-round<span class="token punctuation" >"</span></span> <span class="token attr-name" >role</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>alert<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Form input success icon</h3>
+<h4>Success icon</h4>
 <input class="success" type="text" value="Validated input" title="Test input">
 <span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>success<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Validated input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-form_input-icon cf-icon cf-icon-approved-round<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Form group</h2>
+<h2>Groups</h2>
 <p>A form group is recommended when you need to provide spacing between form elements and between groups of form elements.</p>
 <h3>Form group block</h3>
 <p>Provides sizeable margins between groups of form elements.</p>
@@ -173,7 +227,7 @@
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Input with button</h2>
+<h2>Buttons</h2>
 <h3>Default input and button</h3>
 <div class="input-with-btn">
     <div class="input-with-btn_input">
@@ -210,11 +264,12 @@
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h2>Button inside input</h2>
-<h3>Default button inside of an default input</h3>
+<h3>Button inside input</h3>
+<h4>Default button inside of an default input</h4>
 <div class="btn-inside-input">
     <input type="text"
-           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
+           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
+           title="Test input">
     <button class="btn btn__link">
         Clear
         <span class="cf-icon cf-icon-delete"></span>
@@ -222,18 +277,20 @@
 </div>
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn-inside-input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span>
-           <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+           <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span>
+           <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__link<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         Clear
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-delete<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h3>Super button inside of a super input</h3>
+<h4>Super button inside of a super input</h4>
 <div class="btn-inside-input">
     <input class="input__super"
            type="text"
-           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
+           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
+           title="Test input">
     <button class="btn btn__super btn__link btn__secondary">
         Clear
         <span class="cf-icon cf-icon-delete"></span>
@@ -242,10 +299,106 @@
 <pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn-inside-input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input__super<span class="token punctuation" >"</span></span>
            <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span>
-           <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+           <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span>
+           <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__super btn__link btn__secondary<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         Clear
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-delete<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h2>Select dropdown</h2>
+<h3>Required select</h3>
+<div class="form-l_col form-l_col-1">
+    <label class="form-label-header"
+           for="select_example">
+            Required select example
+    </label>
+    <div class="m-select">
+        <select id="select_example" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-l_col form-l_col-1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>label</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-label-header<span class="token punctuation" >"</span></span>
+           <span class="token attr-name" >for</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            Required select example
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-select<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>select</span> <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example<span class="token punctuation" >"</span></span> <span class="token attr-name" >required</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 1<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option2<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 2<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option3<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 3<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option4<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 4<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>select</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h3>Disabled select</h3>
+<div class="form-l_col form-l_col-1">
+    <label class="form-label-header"
+           for="select_example__disabled">
+            Disabled select example
+    </label>
+    <div class="m-select">
+        <select id="select_example__disabled" disabled>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-l_col form-l_col-1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>label</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-label-header<span class="token punctuation" >"</span></span>
+           <span class="token attr-name" >for</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example__disabled<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            Disabled select example
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-select<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>select</span> <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example__disabled<span class="token punctuation" >"</span></span> <span class="token attr-name" >disabled</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 1<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option2<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 2<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option3<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 3<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option4<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 4<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>select</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h3>Optional select</h3>
+<div class="form-l_col form-l_col-1">
+    <label class="form-label-header"
+           for="select_example__optional">
+            Optional select example
+            <span class="micro-copy">&nbsp;(Optional)</span>
+    </label>
+    <div class="m-select">
+        <select id="select_example__optional">
+            <option value="" disabled selected>Please select</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-l_col form-l_col-1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>label</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>form-label-header<span class="token punctuation" >"</span></span>
+           <span class="token attr-name" >for</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example__optional<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            Optional select example
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>micro-copy<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token entity" title="&nbsp;" >&amp;nbsp;</span>(Optional)<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-select<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>select</span> <span class="token attr-name" >id</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>select_example__optional<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span><span class="token punctuation" >"</span></span> <span class="token attr-name" >disabled</span> <span class="token attr-name" >selected</span><span class="token punctuation" >&gt;</span></span>Please select<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option1<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 1<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option2<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 2<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option3<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 3<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+            <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>option</span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>option4<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Option 4<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>option</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>select</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>

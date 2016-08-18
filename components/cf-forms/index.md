@@ -240,6 +240,186 @@ parent: "Components"
     </div>
 </fieldset>
 
+
+## Atomic form group with big radio buttons
+
+### One-Column
+
+#### Active
+
+<fieldset class="o-form-input-group">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            T-shirt size
+        </legend>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt"
+                   id="input_shirt-1">
+            <label class="a-input_label"
+                   for="input_shirt-1">
+                Small
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt"
+                   id="input_shirt-2">
+            <label class="a-input_label"
+                   for="input_shirt-2">
+                Medium
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt"
+                   id="input_shirt-3">
+            <label class="a-input_label"
+                   for="input_shirt-3">
+                Large
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+#### Disabled
+
+<fieldset class="o-form-input-group">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            T-shirt size
+        </legend>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt__disabled"
+                   id="input_shirt-1__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_shirt-1__disabled">
+                Small
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt__disabled"
+                   id="input_shirt-2__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_shirt-2__disabled">
+                Medium
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_shirt__disabled"
+                   id="input_shirt-3__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_shirt-3__disabled">
+                Large
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+### Two-Column
+
+#### Active
+
+<fieldset class="o-form-input-group o-form-input-group__two-column">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Cereal or Yogurt?
+        </legend>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_breakfast"
+                   id="input_breakfast-1">
+            <label class="a-input_label"
+                   for="input_breakfast-1">
+                Cereal
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_breakfast"
+                   id="input_breakfast-2">
+            <label class="a-input_label"
+                   for="input_breakfast-2">
+                Yogurt
+            </label>
+        </div>
+    </div>
+</fieldset>
+
+#### Disabled
+
+<fieldset class="o-form-input-group o-form-input-group__two-column">
+    <div class="form-l_col
+                form-l_col-1
+                u-mb0">
+        <legend class="form-label-header">
+            Cereal or Yogurt?
+        </legend>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_breakfast__disabled"
+                   id="input_breakfast-1__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_breakfast-1__disabled">
+                Cereal
+            </label>
+        </div>
+    </div>
+    <div class="m-big-radio-button">
+        <div class="m-big-radio-button_container">
+            <input class="a-input"
+                   type="radio"
+                   name="form_breakfast__disabled"
+                   id="input_breakfast-2__disabled"
+                   disabled>
+            <label class="a-input_label"
+                   for="input_breakfast-2__disabled">
+                Yogurt
+            </label>
+        </div>
+    </div>
+</fieldset>
+
 ## Form group
 
 ### Form group block
