@@ -344,11 +344,13 @@ parent: "Components"
             <span class="cf-icon cf-icon-delete"></span>
         </button>
     </div>
+</div>
 
 # Dropdowns/Select element
 
 
 ## Atomic
+
 <!--
    label:         Name of the field.
 
