@@ -11,7 +11,7 @@
   "scripts": {
     "start": "parallelshell 'bundle exec jekyll serve --watch --baseurl ''' 'gulp watch'",
     "build": "gulp build",
-    "cf-link": "npm link cf-core && npm link cf-buttons"
+    "cf-link": "npm link cf-core && npm link cf-buttons && npm link cf-pagination && npm link cf-typography"
   },
   "license": "CC0",
   "keywords": [

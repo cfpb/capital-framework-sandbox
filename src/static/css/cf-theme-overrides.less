@@ -3,6 +3,155 @@
    Capital Framework variable overrides
    ========================================================================== */
 
+
+/* cf-core
+   ========================================================================== */
+
+// Sizing variables
+
+@base-font-size-px:             16px;
+@base-line-height-px:           22px;
+@base-line-height:              unit(@base-line-height-px / @base-font-size-px);
+@mobile-max:                    599px;
+@tablet-min:                    600px;
+
+// Font variables
+
+@webfont-regular:               'AvenirNextLTW01-Regular';
+@webfont-italic:                'AvenirNextLTW01-Italic';
+@webfont-medium:                'AvenirNextLTW01-Medium';
+@webfont-demi:                  'AvenirNextLTW01-Demi';
+
+// Color variables
+
+// body
+@text:                          @black;
+
+// a
+@link-text:                     @pacific;
+@link-underline:                @pacific;
+@link-text-visited:             @dark-teal;
+@link-underline-visited:        @dark-teal;
+@link-text-hover:               @pacific-60;
+@link-underline-hover:          @pacific-60;
+@link-text-active:              @dark-navy;
+@link-underline-active:         @dark-navy;
+
+// thead
+@thead-text:                    @white;
+@thead-bg:                      @dark-gray;
+@td-bg:                         @gray-5;
+@td-bg-alt:                     @gray-10;
+
+// input
+@input-bg:                      @white;
+@input-border:                  @gray-40;
+@input-border-focus:            @pacific;
+@input-placeholder:             @gray-60;
+
+// .figure__bordered
+@figure__bordered:              @gray-40;
+
+
+/* cf-buttons
+   ========================================================================== */
+
+// Color variables
+
+// .btn
+@btn-text:                      @white;
+@btn-bg:                        @pacific;
+@btn-bg-hover:                  @pacific-80;
+@btn-bg-active:                 @navy;
+
+// .btn__secondary
+@btn__secondary-text:           @white;
+@btn__secondary-bg:             @gray-80;
+@btn__secondary-bg-hover:       @gray-60;
+@btn__secondary-bg-active:      @dark-gray;
+
+// .btn__warning
+@btn__warning-text:             @white;
+@btn__warning-bg:               @red;
+@btn__warning-bg-hover:         @red-80;
+@btn__warning-bg-active:        @dark-red;
+
+// .btn__disabled
+@btn__disabled-text:            @gray-80;
+@btn__disabled-bg:              @gray-10;
+@btn__disabled-outline:         @gray-10;
+
+// Sizing variables
+
+// .btn
+@btn-font-size:                 16px;
+@btn-v-padding:                 8px;
+@btn-v-padding-modifier-ie:     .8;
+@super-btn-font-size:           18px;
+
+
+/* cf-expandables
+   ========================================================================== */
+
+// Color variables
+
+// .expandable
+@expandable-focus:              @black;
+
+// .expandable_label
+@expandable_label-text:         @black;
+
+// .expandable_link
+@expandable_link-text:          @pacific;
+
+// .expandable__padded
+@expandable__padded-bg:         @gray-10;
+@expandable__padded-bg-hover:   @gray-10;
+@expandable__padded-divider:    @gray-40;
+
+// .expandable-group
+@expandable-group_header-text:  @gray-80;
+@expandable-group_header-bg:    @gray-10;
+@expandable-group-bg:           @white;
+@expandable-group-divider:      @gray-40;
+
+// Sizing variables
+
+// .expandable_link
+@expandable_link-font-size:     @btn-font-size;
+
+
+/* cf-forms
+   ========================================================================== */
+
+// Color variables
+
+// .error
+@input-error:                   @red;
+
+// warning
+@input-warning:                 @gold;
+
+// .success
+@input-success:                 @green;
+
+// .disabled
+@input-disabled:                 @gray-10;
+
+// .form-label-helper-text
+@label-helper:                  @dark-gray;
+
+// .form-l-inset_container
+@input-inset-bg:                @gray-10;
+
+// .form-l-inset_container.is-checked
+@input-inset-selected:          @pacific-20;
+
+// Sizing variables
+
+// .input__super
+@input__super-font-size:        @super-btn-font-size;
+
 /* cf-grid
    ========================================================================== */
 
