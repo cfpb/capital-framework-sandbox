@@ -589,11 +589,9 @@ The visual should be 640x360 (16x9 ratio) and resize to fit the height of the FC
 </section>
 
 
-### Featured content module - Maps
+### Featured content module - Right-anchored image
 
-When the featured content module image is a map, the `o-featured-content-module_img__right` modifier class is added to the `o-featured-content-module_img` image. This anchors the image to the right side so that the copyright information is displayed.
-
-<section class="block block__border block__flush o-featured-content-module">
+<section class="block block__border block__flush o-featured-content-module o-featured-content-module__right">
     <div class="o-featured-content-module_text">
         <div class="category-slug">
             <span class="o-featured-content-module_icon cf-icon cf-icon-speech-bubble">
@@ -602,14 +600,13 @@ When the featured content module image is a map, the `o-featured-content-module_
         <p>Lorem ipsum dolor sit amet, ei ius adhuc inani iudico, labitur instructior ex pri. Cu pri inani constituto, cum aeque noster commodo cu.</p>
         <a class="jump-link jump-link__underline"> <span class="jump-link_text">Read more about the feature</span> </a>
     </div>
-    <div class="o-featured-content-module_visual"> <img class="o-featured-content-module_img o-featured-content-module_img__right" src="http://placekitten.com/g/540/270"> </div>
+    <div class="o-featured-content-module_visual"> <img class="o-featured-content-module_img" src="http://placekitten.com/g/540/270"> </div>
 </section>
 
-### Featured content module - Videos
 
-When the featured content module image is a video, the `o-featured-content-module_img__center` modifier class is added to the `o-featured-content-module_img` image. This anchors the center of the image to the center of the available space so that the focal point of the video generally remains centered.
+### Featured content module - Center-anchored image
 
-<section class="block block__border block__flush o-featured-content-module">
+<section class="block block__border block__flush o-featured-content-module o-featured-content-module__center">
     <div class="o-featured-content-module_text">
         <div class="category-slug">
             <span class="o-featured-content-module_icon cf-icon cf-icon-speech-bubble">
@@ -618,7 +615,7 @@ When the featured content module image is a video, the `o-featured-content-modul
         <p>Lorem ipsum dolor sit amet, ei ius adhuc inani iudico, labitur instructior ex pri. Cu pri inani constituto, cum aeque noster commodo cu.</p>
         <a class="jump-link jump-link__underline"> <span class="jump-link_text">Read more about the feature</span> </a>
     </div>
-    <div class="o-featured-content-module_visual"> <img class="o-featured-content-module_img o-featured-content-module_img__center" src="http://placekitten.com/g/540/270"> </div>
+    <div class="o-featured-content-module_visual"> <img class="o-featured-content-module_img" src="http://placekitten.com/g/540/270"> </div>
 </section>
 
 
