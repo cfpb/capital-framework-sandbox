@@ -503,22 +503,22 @@ parent: "Components"
 
 ### Default input and button
 
-<div class="m-input-with-btn">
-    <div class="m-input-with-btn_input">
+<div class="o-form__input-w-btn">
+    <div class="o-form__input-w-btn_input-container">
         <input type="text" title="Test input">
     </div>
-    <div class="m-input-with-btn_btn">
+    <div class="o-form__input-w-btn_btn-container">
         <button class="a-btn">Search</button>
     </div>
 </div>
 
 ### Super input and button
 
-<div class="m-input-with-btn">
-    <div class="m-input-with-btn_input">
+<div class="o-form__input-w-btn">
+    <div class="o-form__input-w-btn_input-container">
         <input class="input__super" type="text" title="Test input">
     </div>
-    <div class="m-input-with-btn_btn">
+    <div class="o-form__input-w-btn_btn-container">
         <button class="a-btn a-btn__super">Search</button>
     </div>
 </div>
