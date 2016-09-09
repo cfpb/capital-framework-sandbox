@@ -41,8 +41,8 @@ parent: "cf-layout"
             </a>
         </div>
         <div class="m-hero_image-wrapper m-hero_image-wrapper__bleed-vertical">
-            <img class="m-hero_image" src="/dist/static/img/bleeding-hero-illustration_mobile.png" alt="">
-            <div class="m-hero_image__bleeding" style="background-image: url('/dist/static/img/bleeding-hero-illustration.png')"></div>
+            <img class="m-hero_image" src="{{ site.github.url }}/dist/static/img/bleeding-hero-illustration_mobile.png" alt="">
+            <div class="m-hero_image__bleeding" style="background-image: url('{{ site.github.url }}/dist/static/img/bleeding-hero-illustration.png')"></div>
         </div>
     </div>
 </section>
@@ -63,8 +63,8 @@ parent: "cf-layout"
             </a>
         </div>
         <div class="m-hero_image-wrapper m-hero_image-wrapper__bleed-vertical">
-            <img class="m-hero_image" src="/dist/static/img/bleeding-hero-illustration_mobile.png" alt="">
-            <div class="m-hero_image__bleeding" style="background-image: url('/dist/static/img/bleeding-hero-illustration_alt.png')"></div>
+            <img class="m-hero_image" src="{{ site.github.url }}/dist/static/img/bleeding-hero-illustration_mobile.png" alt="">
+            <div class="m-hero_image__bleeding" style="background-image: url('{{ site.github.url }}/dist/static/img/bleeding-hero-illustration_alt.png')"></div>
         </div>
     </div>
 </section>
