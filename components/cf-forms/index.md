@@ -13,13 +13,47 @@ parent: "Components"
 </label>
 
 
-## Super input
+## Form fields
 
-## Example
+### Text fields
 
-<input class="input__super" type="text" value="Super input" title="Test input">
-<button class="a-btn a-btn__super">Super</button>
+<div class="m-form-field">
+    <label class="a-label" for="test_text-input">Label</label>
+    <input class="a-text-input" type="text" placeholder="ABCD" id="test_text-input">
+</div>
 
+<div class="m-form-field">
+    <label class="a-label__heading" for="test_text-input2">Label</label>
+    <input class="a-text-input" type="text" placeholder="ABCD" id="test_text-input2">
+</div>
+
+### Checkboxes
+
+<div class="m-form-field__checkbox">
+    <input class="a-checkbox" type="checkbox" id="test_checkbox">
+    <label class="a-label" for="test_checkbox">Label</label>
+</div>
+
+### Radio buttons
+
+<div class="m-form-field__radio">
+    <input class="a-radio" type="radio" id="test_radio">
+    <label class="a-label" for="test_radio">Label</label>
+</div>
+
+### Select box
+
+<div class="m-form-field__select">
+    <label class="a-label" for="test_select">Label</label>
+    <div class="a-select">
+        <select id="test_select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+</div>
 
 ## Form validation
 
