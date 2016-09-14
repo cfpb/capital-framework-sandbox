@@ -20,48 +20,21 @@ parent: "Components"
 <input class="input__super" type="text" value="Super input" title="Test input">
 <button class="a-btn a-btn__super">Super</button>
 
-
-## Input states
-
-### Error state
-
-<input class="error" type="text" value="Invalid input" title="Test input">
-
-### Warning state
-
-<input class="warning" type="text" value="Invalid input" title="Test input">
-
-### Success state
-
-<input class="success" type="text" value="Validated input" title="Test input">
-
-### Disabled state
-
-<input class="disabled" disabled="true" autocomplete="off" type="text" value="Validated input" title="Test input">
-
 ## Form icons
 
-### Form input icons
-
-<input type="text" value="" title="Test input">
-<span class="cf-form_input-icon cf-icon cf-icon-email"></span>
-
 ### Form input error icon
-
-<input class="error" type="text" value="Invalid input" title="Test input">
-<span class="cf-form_input-icon cf-icon cf-icon-delete-round" role="alert"></span>
-
-### Form input warning icon
-
-<input class="warning" type="text" value="Invalid input" title="Test input">
-<span class="cf-form_input-icon cf-icon cf-icon-error-round" role="alert"></span>
-
-### Form input success icon
-
-<input class="success" type="text" value="Validated input" title="Test input">
-<span class="cf-form_input-icon cf-icon cf-icon-approved-round"></span>
-
-## Atomic form group with big checkboxes
+<div class="m-field m-field__error">
+    <label class="a-label__heading" for="form-input-error">Label</label>
+    <input class="a-text-input a-text-input__error"
+           type="text"
+           value="Invalid input"
+           id="form-input-error"
+           aria-describedby="form-input-error_message">
+    <div class="a-error-message" id="form-input-error_message" role="alert">
+        <span class="cf-icon cf-icon-delete-round" aria-hidden="true"></span>
+        This is a required question, please answer.
+    </div>
+</div>
 
 ### One-Column
 
