@@ -133,28 +133,65 @@ parent: "Components"
 ### Button Links
 
 #### Default state
-<a href="#" class="a-btn__link">Button Link</a>
-<a href="#" class="a-btn__link a-btn__secondary">Secondary Button Link</a>
-<a href="#" class="a-btn__link a-btn__warning">Warning Button Link</a>
+<a href="#" class="a-btn a-btn__link">Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__secondary">Secondary Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__warning">Warning Button Link</a>
 
 #### Hovered state
-<a href="#" class="a-btn__link hover">Button Link</a>
-<a href="#" class="a-btn__link a-btn__secondary hover">Secondary Button Link</a>
-<a href="#" class="a-btn__link a-btn__warning hover">Warning Button Link</a>
+<a href="#" class="a-btn a-btn__link hover">Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__secondary hover">Secondary Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__warning hover">Warning Button Link</a>
 
 #### Focus state
-<a href="#" class="a-btn__link focus">Button Link</a>
-<a href="#" class="a-btn__link a-btn__secondary focus">Secondary Button Link</a>
-<a href="#" class="a-btn__link a-btn__warning focus">Warning Button Link</a>
+<a href="#" class="a-btn a-btn__link focus">Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__secondary focus">Secondary Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__warning focus">Warning Button Link</a>
 
 #### Active state
-<a href="#" class="a-btn__link active">Button Link</a>
-<a href="#" class="a-btn__link a-btn__secondary active">Secondary Button Link</a>
-<a href="#" class="a-btn__link a-btn__warning active">Warning Button Link</a>
+<a href="#" class="a-btn a-btn__link active">Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__secondary active">Secondary Button Link</a>
+<a href="#" class="a-btn a-btn__link a-btn__warning active">Warning Button Link</a>
+
+### Icon Buttons
+
+#### Button with Icon on the left
+
+<button class="a-btn a-btn__icon a-btn_icon-position-left a-btn_icon__delete">
+  Close
+</button>
+
+<button class="a-btn a-btn__icon a-btn_icon-position-left a-btn_icon__delete a-btn__secondary">
+  Close
+</button> - Secondary button
+
+<button class="a-btn a-btn__icon a-btn_icon-position-left a-btn_icon__delete a-btn__warning">
+  Close
+</button> - Warning button
+
+<button class="a-btn a-btn__icon a-btn_icon-position-left a-btn_icon__delete a-btn__disabled">
+  Close
+</button> - Disabled button
+
+#### Button with Icon on the right
+
+<button class="a-btn a-btn_icon-position-right a-btn_icon__delete">
+  Close
+</button>
+
+<button class="a-btn a-btn__secondary a-btn_icon-position-right a-btn_icon__delete">
+  Close
+</button> - Secondary button
+
+<button class="a-btn a-btn__warning a-btn_icon-position-right a-btn_icon__delete">
+  Close
+</button> - Warning button
+
+<button class="a-btn a-btn__disabled a-btn_icon-position-right a-btn_icon__delete">
+  Close
+</button> - Disabled button
 
 
 ## Molecules
-
 
 ### Standard Button Group
 
@@ -191,42 +228,3 @@ parent: "Components"
   <button class="a-btn a-btn__super">No</button>
   <button class="a-btn a-btn__super">Maybe So</button>
 </div>
-
-
-### Icon Buttons
-
-#### Button with Icon on the left
-
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete">
-  Close
-</button>
-
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__secondary">
-  Close
-</button> - Secondary button
-
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__warning">
-  Close
-</button> - Warning button
-
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__disabled">
-  Close
-</button> - Disabled button
-
-#### Button with Icon on the right
-
-<button class="a-btn a-btn_icon-position-right a-btn_icon__delete">
-  Close
-</button>
-
-<button class="a-btn a-btn__secondary a-btn_icon-position-right a-btn_icon__delete">
-  Close
-</button> - Secondary button
-
-<button class="a-btn a-btn__warning a-btn_icon-position-right a-btn_icon__delete">
-  Close
-</button> - Warning button
-
-<button class="a-btn a-btn__disabled a-btn_icon-position-right a-btn_icon__delete">
-  Close
-</button> - Disabled button
