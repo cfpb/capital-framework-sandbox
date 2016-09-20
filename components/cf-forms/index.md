@@ -507,80 +507,10 @@ parent: "Components"
         value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
         title="Test input"
         class="a-text-input">
-    <div class="m-btn-inside-input_btn-container">
-      <button class="a-btn a-btn__link">
-          Clear
-          <span class="cf-icon cf-icon-delete"></span>
-      </button>
-    </div>
-</div>
-
-&nbsp;
-
-#### Disabled button
-
-<div class="m-btn-inside-input">
-    <input type="text"
-        value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-        title="Test input"
-        class="a-text-input a-text-input__disabled">
-    <div class="m-btn-inside-input_btn-container">
-      <button class="a-btn a-btn__link">
-          Clear
-          <span class="cf-icon cf-icon-delete"></span>
-      </button>
-    </div>
-</div>
-
-&nbsp;
-
-#### Error state
-
-<div class="m-btn-inside-input">
-    <input type="text"
-        value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-        title="Test input"
-        class="a-text-input a-text-input__error">
-    <div class="m-btn-inside-input_btn-container">
-      <button class="a-btn a-btn__link">
-          Clear
-          <span class="cf-icon cf-icon-delete"></span>
-      </button>
-    </div>
-</div>
-
-&nbsp;
-
-#### Warning state
-
-<div class="m-btn-inside-input">
-    <input type="text"
-        value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-        title="Test input"
-        class="a-text-input a-text-input__warning">
-    <div class="m-btn-inside-input_btn-container">
-      <button class="a-btn a-btn__link">
-          Clear
-          <span class="cf-icon cf-icon-delete"></span>
-      </button>
-    </div>
-</div>
-
-&nbsp;
-
-#### Success state
-
-<div class="m-btn-inside-input">
-    <input type="text"
-        value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-        title="Test input"
-        class="a-text-input a-text-input__success">
-    <div class="m-btn-inside-input_btn-container">
-      <button class="a-btn a-btn__link">
-          Clear
-          <span class="cf-icon cf-icon-delete"></span>
-      </button>
-    </div>
+    <button class="a-btn a-btn__link">
+        Clear
+        <span class="cf-icon cf-icon-delete"></span>
+    </button>
 </div>
 
 &nbsp;
@@ -589,18 +519,16 @@ parent: "Components"
 
 <div class="o-form__input-w-btn">
     <div class="o-form__input-w-btn_input-container">
-      <div class="m-btn-inside-input">
-          <input type="text"
-              value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-              title="Test input"
-              class="a-text-input">
-          <div class="m-btn-inside-input_btn-container">
+        <div class="m-btn-inside-input">
+            <input type="text"
+                value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
+                title="Test input"
+                class="a-text-input">
             <button class="a-btn a-btn__link">
                 Clear
                 <span class="cf-icon cf-icon-delete"></span>
             </button>
-          </div>
-      </div>
+        </div>
     </div>
     <div class="o-form__input-w-btn_btn-container">
         <button class="a-btn">Search</button>
