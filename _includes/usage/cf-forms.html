@@ -22,7 +22,6 @@ not work perfectly in older browsers.</p>
 </li>
 <li><a href="#inputs">Inputs</a>
 <ul>
-<li><a href="#super-input">Super input</a></li>
 <li><a href="#input-states">Input states</a></li>
 <li><a href="#input-icons">Input icons</a></li>
 </ul>
@@ -36,9 +35,7 @@ not work perfectly in older browsers.</p>
 <li><a href="#buttons">Buttons</a>
 <ul>
 <li><a href="#default-input-and-button">Default input and button</a></li>
-<li><a href="#super-input-and-button">Super input and button</a></li>
 <li><a href="#button-inside-input">Button inside input</a></li>
-<li><a href="#super-button-inside-of-a-super-input">Super button inside of a super input</a></li>
 </ul>
 </li>
 </ul>
@@ -58,10 +55,6 @@ not work perfectly in older browsers.</p>
 // .disabled
 @input-disabled:                #cdb5cd;
 </code></pre>
-<h3>Sizing variables</h3>
-<pre><code>// .input__super
-@input__super-font-size:        18px;
-</code></pre>
 <h2>Labels</h2>
 <h3>Label header</h3>
 <label class="form-label-header">
@@ -72,13 +65,6 @@ not work perfectly in older browsers.</p>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>label</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
 <h2>Inputs</h2>
-<h3>Super input</h3>
-<p>An input that matches the height of a super button.</p>
-<input class="input__super" type="text" value="Super input" title="Test input">
-<button class="btn btn__super">Super</button>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input__super<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Super input<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>input</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__super<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Super<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
 <h3>Input states</h3>
 <p>See the 'Form icons' section below for guidance on adding icons to states.</p>
 <h4>Error state</h4>
@@ -229,38 +215,20 @@ not work perfectly in older browsers.</p>
 </code></pre>
 <h2>Buttons</h2>
 <h3>Default input and button</h3>
-<div class="input-with-btn">
-    <div class="input-with-btn_input">
+<div class="o-form__input-w-btn">
+    <div class="o-form__input-w-btn_input-container">
         <input type="text" title="Test input">
     </div>
-    <div class="input-with-btn_btn">
-        <button class="btn">Search</button>
+    <div class="o-form__input-w-btn_btn-container">
+        <button class="a-btn">Search</button>
     </div>
 </div>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn_input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>o-form__input-w-btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>o-form__input-w-btn_input-container<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn_btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Search<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
-<h3>Super input and button</h3>
-<div class="input-with-btn">
-    <div class="input-with-btn_input">
-        <input class="input__super" type="text" title="Test input">
-    </div>
-    <div class="input-with-btn_btn">
-        <button class="btn btn__super">Search</button>
-    </div>
-</div>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn_input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input__super<span class="token punctuation" >"</span></span> <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span> <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input-with-btn_btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__super<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Search<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>o-form__input-w-btn_btn-container<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>a-btn<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>Search<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
@@ -280,28 +248,6 @@ not work perfectly in older browsers.</p>
            <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span>
            <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__link<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        Clear
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-delete<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
-<h4>Super button inside of a super input</h4>
-<div class="btn-inside-input">
-    <input class="input__super"
-           type="text"
-           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable."
-           title="Test input">
-    <button class="btn btn__super btn__link btn__secondary">
-        Clear
-        <span class="cf-icon cf-icon-delete"></span>
-    </button>
-</div>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn-inside-input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>input</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>input__super<span class="token punctuation" >"</span></span>
-           <span class="token attr-name" >type</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>text<span class="token punctuation" >"</span></span>
-           <span class="token attr-name" >value</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>This is some really long text to make sure that the button doesn<span class="token punctuation" >'</span>t overlap the content in such a way that this input becomes unusable.<span class="token punctuation" >"</span></span>
-           <span class="token attr-name" >title</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>Test input<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>button</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>btn btn__super btn__link btn__secondary<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
         Clear
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>cf-icon cf-icon-delete<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>button</span><span class="token punctuation" >&gt;</span></span>
