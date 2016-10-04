@@ -62,7 +62,7 @@ parent: "Components"
 <div class="m-form-field__select">
     <label class="a-label" for="test_select">Label</label>
     <div class="a-select">
-        <select id="test_select" disabled>
+        <select id="test_select__disabled" disabled>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
