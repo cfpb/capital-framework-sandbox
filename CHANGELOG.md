@@ -9,6 +9,10 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 - Added documentation files to include all components
 - Added glob package
 - Added npm build script to standardize building across projects
+- Added atomic select
+- Added Featured Content Module
+- Added field validation example
+- Added examples of production usable forms
 
 ### Changed
 
@@ -19,3 +23,15 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 - Updated spacing to spaces for consistency
 - Updated gulp watch task to watch CF components in node_modules dir
 - Updated instructions for bundler installation
+- Updated button examples
+- Updated form input examples
+- Updated input-w-btn exmaple
+- Updated big-checkboxes/radios to match m-field changes
+
+### Fixed
+
+- Fixed image links on Heroes page
+
+### Removed
+
+- Removed Super Input example
