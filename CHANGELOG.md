@@ -27,6 +27,7 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 - Updated form input examples
 - Updated input-w-btn exmaple
 - Updated big-checkboxes/radios to match m-field changes
+- Updated btn-inside-input example to match latest in cf-forms
 
 ### Fixed
 

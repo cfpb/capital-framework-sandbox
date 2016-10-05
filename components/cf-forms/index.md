@@ -370,15 +370,14 @@ parent: "Components"
 
 ### Default button inside of an default input
 
-<div class="block">
-    <div class="btn-inside-input">
-        <input type="text"
-               value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
-        <button class="a-btn a-btn__link">
-            Clear
-            <span class="cf-icon cf-icon-delete"></span>
-        </button>
-    </div>
+<div class="m-btn-inside-input">
+    <input class="a-text-input"
+           type="text"
+           value="This is some really long text to make sure that the button doesn't overlap the content in such a way that this input becomes unusable." title="Test input">
+    <button class="a-btn a-btn__link">
+        Clear
+        <span class="cf-icon cf-icon-delete"></span>
+    </button>
 </div>
 
 
