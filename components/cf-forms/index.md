@@ -503,25 +503,14 @@ parent: "Components"
 
 ### Default input and button
 
-<div class="o-form__input-w-btn">
+<form class="o-form__input-w-btn">
     <div class="o-form__input-w-btn_input-container">
-        <input type="text" title="Test input">
+        <input class="a-text-input" type="text" title="Test input">
     </div>
     <div class="o-form__input-w-btn_btn-container">
-        <button class="a-btn">Search</button>
+        <button class="a-btn" type="submit">Search</button>
     </div>
-</div>
-
-### Super input and button
-
-<div class="o-form__input-w-btn">
-    <div class="o-form__input-w-btn_input-container">
-        <input class="input__super" type="text" title="Test input">
-    </div>
-    <div class="o-form__input-w-btn_btn-container">
-        <button class="a-btn a-btn__super">Search</button>
-    </div>
-</div>
+</form>
 
 ## Button inside input
 
