@@ -16,7 +16,7 @@ gulp.task( 'scripts', function() {
         filename: '[name].js'
       }
     } ) )
-    .pipe( $.uglify() )
+//    .pipe( $.uglify() )
     .on( 'error', handleErrors )
     .pipe( $.header( banner, { pkg: pkg } ) )
     .pipe( $.rename( {
