@@ -8,6 +8,8 @@ parent: "Components"
 
 ## Form labels
 
+### Default label
+
 <label class="a-label">Form label</label>
 
 ### Label heading
@@ -32,7 +34,7 @@ parent: "Components"
 
 ### Checkboxes
 
-<div class="m-form-field__checkbox">
+<div class="m-form-field m-form-field__checkbox">
     <input class="a-checkbox" type="checkbox" id="test_checkbox">
     <label class="a-label" for="test_checkbox">Label</label>
 </div>
@@ -45,9 +47,11 @@ parent: "Components"
     <legend class="a-label a-label__heading">
         Favorite Pet
     </legend>
-    <ul class="list list__unstyled">
+    <ul class="m-list m-list__unstyled">
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -59,7 +63,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -71,7 +77,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -91,9 +99,11 @@ parent: "Components"
     <legend class="a-label a-label__heading">
         Favorite Pet
     </legend>
-    <ul class="list list__unstyled">
+    <ul class="m-list m-list__unstyled">
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -106,7 +116,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -119,7 +131,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__checkbox m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__checkbox
+                        m-form-field__lg-target">
                 <input class="a-checkbox"
                        type="checkbox"
                        name="form_pets"
@@ -136,7 +150,7 @@ parent: "Components"
 
 ### Radio buttons
 
-<div class="m-form-field__radio">
+<div class="m-form-field m-form-field__radio">
     <input class="a-radio" type="radio" id="test_radio">
     <label class="a-label" for="test_radio">Label</label>
 </div>
@@ -149,9 +163,11 @@ parent: "Components"
     <legend class="a-label a-label__heading">
         T-Shirt Size
     </legend>
-    <ul class="list list__unstyled">
+    <ul class="m-list m-list__unstyled">
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -163,7 +179,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -175,7 +193,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -195,9 +215,11 @@ parent: "Components"
     <legend class="a-label a-label__heading">
         T-Shirt Size
     </legend>
-    <ul class="list list__unstyled">
+    <ul class="m-list m-list__unstyled">
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -210,7 +232,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -223,7 +247,9 @@ parent: "Components"
             </div>
         </li>
         <li>
-            <div class="m-field m-field__radio m-field__lg-target">
+            <div class="m-form-field
+                        m-form-field__radio
+                        m-form-field__lg-target">
                 <input class="a-radio"
                        type="radio"
                        name="form_shirt"
@@ -242,7 +268,7 @@ parent: "Components"
 
 #### Default State
 
-<div class="m-form-field__select">
+<div class="m-form-field m-form-field__select">
     <label class="a-label" for="test_select">Label</label>
     <div class="a-select">
         <select id="test_select">
@@ -256,7 +282,7 @@ parent: "Components"
 
 #### Disabled State
 
-<div class="m-form-field__select">
+<div class="m-form-field m-form-field__select">
     <label class="a-label" for="test_select">Label</label>
     <div class="a-select">
         <select id="test_select__disabled" disabled>
@@ -286,7 +312,8 @@ parent: "Components"
 ## Form validation
 
 ### Form input error icon
-<div class="m-field m-field__error">
+<div class="m-form-field
+            m-form-field__error">
     <label class="a-label__heading" for="form-input-error">Label</label>
     <input class="a-text-input a-text-input__error"
            type="text"
@@ -391,7 +418,7 @@ parent: "Components"
         <div class="content-l">
 
             <div class="content-l_col content-l_col-1">
-                <div class="m-field">
+                <div class="m-form-field">
                     <label class="a-label a-label__heading"
                            for="filter1_title">Item name</label>
                     <input class="a-text-input"
@@ -413,8 +440,8 @@ parent: "Components"
                 <fieldset class="o-form_fieldset">
                     <legend class="a-label a-label__heading"
                            for="categories">Category</legend>
-                    <ul class="list list__unstyled">
-                        <li class="m-field m-field__checkbox">
+                    <ul class="m-list m-list__unstyled">
+                        <li class="m-form-field m-form-field__checkbox">
                             <input class="a-checkbox"
                                    type="checkbox"
                                    value="at-the-cfpb"
@@ -423,7 +450,7 @@ parent: "Components"
                             <label class="a-label" for="filter1_categories_at-the-cfpb">At the CFPB</label>
                         </li>
 
-                        <li class="m-field m-field__checkbox">
+                        <li class="m-form-field m-form-field__checkbox">
                             <input class="a-checkbox"
                                    type="checkbox"
                                    value="policy_compliance"
@@ -432,7 +459,7 @@ parent: "Components"
                             <label class="a-label" for="filter1_categories_policy_compliance">Policy &amp; Compliance</label>
                         </li>
 
-                        <li class="m-field m-field__radio">
+                        <li class="m-form-field m-form-field__radio">
                             <input class="a-radio"
                                    type="radio"
                                    value="data-research-reports"
@@ -441,7 +468,7 @@ parent: "Components"
                             <label class="a-label" for="filter1_categories_data-research-reports">Data, research &amp; reports</label>
                         </li>
 
-                        <li class="m-field m-field__radio">
+                        <li class="m-form-field m-form-field__radio">
                             <input class="a-radio"
                                    type="radio"
                                    value="info-for-consumers"
@@ -460,7 +487,7 @@ parent: "Components"
                 <div class="content-l">
 
                     <div class="content-l_col content-l_col-1-2">
-                        <div class="m-field">
+                        <div class="m-form-field">
                             <label class="a-label a-label__heading"
                                    for="filter1_topics">Topic</label>
                             <div class="m-typeahead"
@@ -476,7 +503,7 @@ parent: "Components"
                     </div>
 
                     <div class="content-l_col content-l_col-1-2">
-                        <div class="m-field">
+                        <div class="m-form-field">
                             <label class="a-label a-label__heading"
                                    for="filter1_authors">Author</label>
                             <div class="m-typeahead"
@@ -503,7 +530,7 @@ parent: "Components"
                         <div class="content-l">
 
                             <div class="content-l_col content-l_col-1-2">
-                                <div class="m-field">
+                                <div class="m-form-field">
                                     <label class="a-label a-label__heading"
                                            for="filter1_from_date">From:</label>
                                     <input class="a-text-input
@@ -518,7 +545,7 @@ parent: "Components"
                             </div>
 
                             <div class="content-l_col content-l_col-1-2">
-                                <div class="m-field">
+                                <div class="m-form-field">
                                     <label class="a-label a-label__heading"
                                            for="filter1_to_date">To:</label>
                                     <input class="a-text-input
@@ -694,7 +721,7 @@ parent: "Components"
         <legend class="a-label a-label__heading">
             Coffee or Tea?
         </legend>
-        <ul class="list list__unstyled content-l">
+        <ul class="m-list m-list__unstyled content-l">
             <li class="content-l_col content-l_col-1-2">
                 <div class="m-field m-field__checkbox m-field__lg-target">
                     <input class="a-checkbox"
@@ -726,7 +753,7 @@ parent: "Components"
         <legend class="a-label a-label__heading">
             Cereal or Yogurt?
         </legend>
-        <ul class="list list__unstyled content-l">
+        <ul class="m-list m-list__unstyled content-l">
             <li class="content-l_col content-l_col-1-2">
                 <div class="m-field m-field__radio m-field__lg-target">
                     <input class="a-radio"

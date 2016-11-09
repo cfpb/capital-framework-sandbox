@@ -33,6 +33,7 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 ### Fixed
 
 - Fixed image links on Heroes page
+- Fixed form field naming issue
 
 ### Removed
 
