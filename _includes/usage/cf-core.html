@@ -10,13 +10,13 @@ not work perfectly in older browsers.</p>
 <ul>
 <li><a href="#variables">Variables</a>
 <ul>
-<li><a href="#sizing-variables">Sizing variables</a></li>
 <li><a href="#color-variables">Color variables</a></li>
+<li><a href="#sizing-variables">Sizing variables</a></li>
 </ul>
 </li>
 <li><a href="#media-queries">Media queries</a>
 <ul>
-<li><a href="#respond-to-min-and-max-mixins">Respond to min and max mixins</a></li>
+<li><a href="#respond-to-min-and-max-width-mixins">Respond to min and max mixins</a></li>
 <li><a href="#respond-to-range-mixin">Respond to range mixin</a></li>
 <li><a href="#respond-to-dpi-mixin">Respond to dpi mixin</a></li>
 <li><a href="#respond-to-print-mixin">Respond to print mixin</a></li>
@@ -44,26 +44,11 @@ not work perfectly in older browsers.</p>
 <ul>
 <li><a href="#full-width-images">Full-width images</a></li>
 <li><a href="#figure">Figure</a></li>
-<li><a href="#bordered-figure">Bordered figure</a></li>
 </ul>
 </li>
 </ul>
 <h2>Variables</h2>
 <p>Theme variables for setting the color and sizes throughout the project. Overwrite them in your own project by duplicating the variable <code>@key: value</code>.</p>
-<p>Ex. to set your base font size, add <code>@base-font-size-px: 17px;</code> to your project.</p>
-<h3>Sizing variables</h3>
-<pre><code>@base-font-size-px:   16px;
-@base-line-height-px: 22px;
-@base-line-height:    unit(@base-line-height-px / @base-font-size-px);
-@bp-xs-max:           600px;
-@bp-sm-min:           @bp-xs-max + 1px;
-@bp-sm-max:           900px;
-@bp-med-min:          @bp-sm-max + 1px;
-@bp-med-max:          1020px;
-@bp-lg-min:           @bp-med-max + 1px;
-@bp-lg-max:           1230px;
-@bp-xl-min:           @bp-lg-max + 1px;
-</code></pre>
 <h3>Color variables</h3>
 <p><code>$color-</code> variables are from 18F's <a href="https://github.com/18F/web-design-standards/blob/18f-pages/assets/_scss/core/_variables.scss">US Web Design Standards</a></p>
 <pre><code>// body
@@ -91,6 +76,19 @@ not work perfectly in older browsers.</p>
 @input-border:           #5b616b; // $color-gray
 @input-border-focus:     #3e94cf; // $color-focus
 @input-placeholder:      grayscale(#c7336e);
+</code></pre>
+<h3>Sizing variables</h3>
+<pre><code>@base-font-size-px:   16px;
+@base-line-height-px: 22px;
+@base-line-height:    unit(@base-line-height-px / @base-font-size-px);
+@bp-xs-max:           600px;
+@bp-sm-min:           @bp-xs-max + 1px;
+@bp-sm-max:           900px;
+@bp-med-min:          @bp-sm-max + 1px;
+@bp-med-max:          1020px;
+@bp-lg-min:           @bp-med-max + 1px;
+@bp-lg-max:           1230px;
+@bp-xl-min:           @bp-lg-max + 1px;
 </code></pre>
 <h2>Media queries</h2>
 <p>Mixins for consistent media queries that take <code>px</code> values and convert them to <code>em</code>s.</p>
@@ -426,9 +424,9 @@ such as Apple retina screens</p>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>video</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
-<h4>Link Modifiers</h4>
+<h4>Link modifiers</h4>
 <p>Modify link properties using the following mixins.</p>
-<h5>Link Colors</h5>
+<h5>Link colors</h5>
 <p>Calling the mixin without arguments will set the following states - default(pacific), :hover(pacific-50), :focus:(pacific), :visited teal, :active navy.</p>
 <p><code>u-link__colors()</code></p>
 <p>Passing a single argument into the mixin will set the color for the default, :visited, :hover, :focus, :active states.</p>

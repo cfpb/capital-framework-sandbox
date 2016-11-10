@@ -3,38 +3,42 @@
 and has more basic typography patterns.</p>
 <h2>Contents</h2>
 <ul>
-<li><a href="#variables">Variables</a></li>
-<li><a href="#pull-quote">Pull quote</a></li>
-<li><a href="#micro-copy">Micro copy</a></li>
-<li><a href="#short-description">Short description</a></li>
-<li><a href="#date">Date</a></li>
+<li><a href="#variables">Variables</a>
+<ul>
+<li><a href="#color-variables">Color variables</a></li>
+</ul>
+</li>
+<li><a href="#headings">Headings</a>
+<ul>
+<li><a href="#heading-with-icon">Heading with icon</a></li>
+</ul>
+</li>
 <li><a href="#headers">Headers</a>
 <ul>
-<li><a href="#category-slug">Category slug</a></li>
-<li><a href="#header-slug">Header slug</a></li>
-<li><a href="#padded-slug">Padded header</a></li>
-<li><a href="#fancy-slug">Fancy slug</a></li>
+<li><a href="#slug-header">Slug header</a></li>
 <li><a href="#meta-header">Meta header</a></li>
 </ul>
 </li>
 <li><a href="#link-patterns">Link patterns</a>
 <ul>
 <li><a href="#links-with-icons">Links with icons</a></li>
-<li><a href="#styled-link">Styled link</a></li>
 <li><a href="#jump-link">Jump link</a></li>
 <li><a href="#block-link">Block link</a></li>
 </ul>
 </li>
 <li><a href="#lists">Lists</a>
 <ul>
-<li><a href="#unstyled-list">Unstyled list</a></li>
-<li><a href="#spaced-list">Spaced list</a></li>
-<li><a href="#spaced-list-item">Spaced list item</a></li>
-<li><a href="#horizontal-list">Horizontal list</a></li>
-<li><a href="#link-list">Link list</a></li>
-<li><a href="#icon-list">Icon list</a></li>
-<li><a href="#link-list-with-icons">Link list with icons</a></li>
-<li><a href="#custom-bullet-mixin">Custom bullet mixin</a></li>
+<li><a href="#unstyled-list-modifier">Unstyled list modifier</a></li>
+<li><a href="#spaced-list-modifier">Spaced list modifier</a></li>
+<li><a href="#horizontal-list-modifier">Horizontal list modifier</a></li>
+<li><a href="#link-list-modifier">Link list modifier</a></li>
+</ul>
+</li>
+<li><a href="#miscellaneous-text">Miscellaneous text</a>
+<ul>
+<li><a href="#micro-copy">Micro copy</a></li>
+<li><a href="#date">Date</a></li>
+<li><a href="#pull-quote">Pull quote</a></li>
 </ul>
 </li>
 </ul>
@@ -88,82 +92,6 @@ Overwrite them in your own project by duplicating the variable <code>@key: value
 // .a-link__jump
 @jump-link_bg:              #f1f1f1; // $color-gray-lightest
 @jump-link_border:          #323a45; // $color-gray-dark
-</code></pre>
-<h2>Running Text</h2>
-<h3>Micro copy</h3>
-<p>The <code>.a-micro-copy</code> class is good for highlighting small pieces of text, typically
-legal copy.</p>
-<p class="a-micro-copy">
-    Lorem ipsum dolor sit amet
-</p>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>a-micro-copy<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    Lorem ipsum dolor sit amet
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
-<h3>Date</h3>
-<span class="a-date">
-    Nov 4, 2013
-</span>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>a-date<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    Nov 4, 2013
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
-<h3>Pull quote</h3>
-<p>Use a pull quote to highlight excerpts from the current work.
-This is not to be confused with <code>blockquote</code> which quotes from an external work.
-Since a pull quote is an excerpt and repeats content from the article
-you should use the <code>aside</code> element.</p>
-<h4>Default pull quote</h4>
-<aside class="m-pull-quote">
-    <p class="m-pull-quote_body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    </p>
-    <footer>
-        <cite class="m-pull-quote_citation">
-            - Author Name
-        </cite>
-    </footer>
-</aside>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>aside</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_body<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>footer</span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>cite</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_citation<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-            - Author Name
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>cite</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>footer</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>aside</span><span class="token punctuation" >&gt;</span></span>
-</code></pre>
-<h4>Large pull quote</h4>
-<aside class="m-pull-quote m-pull-quote__large">
-    <div class="m-pull-quote_body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    </div>
-    <footer>
-        <cite class="m-pull-quote_citation">
-            - Author Name
-        </cite>
-    </footer>
-</aside>
-<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>aside</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote m-pull-quote__large<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_body<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>footer</span><span class="token punctuation" >&gt;</span></span>
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>cite</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_citation<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
-            - Author Name
-        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>cite</span><span class="token punctuation" >&gt;</span></span>
-    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>footer</span><span class="token punctuation" >&gt;</span></span>
-<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>aside</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
 <h2>Headings</h2>
 <h3>Padded heading</h3>
@@ -458,4 +386,80 @@ It converts to a finger-friendly link with a large tap area on smaller screens.<
         <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>a</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-list_link<span class="token punctuation" >"</span></span> <span class="token attr-name" >href</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>#<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>List item 3<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>a</span><span class="token punctuation" >&gt;</span></span>
     <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>li</span><span class="token punctuation" >&gt;</span></span>
 <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>ul</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h2>Miscellaneous Text</h2>
+<h3>Micro copy</h3>
+<p>The <code>.a-micro-copy</code> class is good for highlighting small pieces of text, typically
+legal copy.</p>
+<p class="a-micro-copy">
+    Lorem ipsum dolor sit amet
+</p>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>a-micro-copy<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    Lorem ipsum dolor sit amet
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h3>Date</h3>
+<span class="a-date">
+    Nov 4, 2013
+</span>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>span</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>a-date<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    Nov 4, 2013
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>span</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h3>Pull quote</h3>
+<p>Use a pull quote to highlight excerpts from the current work.
+This is not to be confused with <code>blockquote</code> which quotes from an external work.
+Since a pull quote is an excerpt and repeats content from the article
+you should use the <code>aside</code> element.</p>
+<h4>Default pull quote</h4>
+<aside class="m-pull-quote">
+    <p class="m-pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </p>
+    <footer>
+        <cite class="m-pull-quote_citation">
+            - Author Name
+        </cite>
+    </footer>
+</aside>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>aside</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>p</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_body<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>p</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>footer</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>cite</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_citation<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            - Author Name
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>cite</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>footer</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>aside</span><span class="token punctuation" >&gt;</span></span>
+</code></pre>
+<h4>Large pull quote</h4>
+<aside class="m-pull-quote m-pull-quote__large">
+    <div class="m-pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </div>
+    <footer>
+        <cite class="m-pull-quote_citation">
+            - Author Name
+        </cite>
+    </footer>
+</aside>
+<pre><code><span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>aside</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote m-pull-quote__large<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>div</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_body<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>div</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>footer</span><span class="token punctuation" >&gt;</span></span>
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;</span>cite</span> <span class="token attr-name" >class</span><span class="token attr-value" ><span class="token punctuation" >=</span><span class="token punctuation" >"</span>m-pull-quote_citation<span class="token punctuation" >"</span></span><span class="token punctuation" >&gt;</span></span>
+            - Author Name
+        <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>cite</span><span class="token punctuation" >&gt;</span></span>
+    <span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>footer</span><span class="token punctuation" >&gt;</span></span>
+<span class="token tag" ><span class="token tag" ><span class="token punctuation" >&lt;/</span>aside</span><span class="token punctuation" >&gt;</span></span>
 </code></pre>
