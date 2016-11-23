@@ -197,36 +197,74 @@ parent: "Components"
 
 #### Button with Icon on the left
 
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete">
+<button class="cf-icon
+               cf-icon__before
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-left">
   Close
 </button>
 
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__secondary">
+<button class="cf-icon
+               cf-icon__before
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-left
+               a-btn__secondary">
   Close
 </button> - Secondary button
 
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__warning">
+<button class="cf-icon
+               cf-icon__before
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-left
+               a-btn__warning">
   Close
 </button> - Warning button
 
-<button class="a-btn a-btn_icon-position-left a-btn_icon__delete a-btn__disabled">
+<button class="cf-icon
+               cf-icon__before
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-left
+               a-btn__disabled">
   Close
 </button> - Disabled button
 
 #### Button with Icon on the right
 
-<button class="a-btn a-btn_icon-position-right a-btn_icon__delete">
+<button class="cf-icon
+               cf-icon__after
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-right">
   Close
 </button>
 
-<button class="a-btn a-btn__secondary a-btn_icon-position-right a-btn_icon__delete">
+<button class="cf-icon
+               cf-icon__after
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-right
+               a-btn__secondary">
   Close
 </button> - Secondary button
 
-<button class="a-btn a-btn__warning a-btn_icon-position-right a-btn_icon__delete">
+<button class="cf-icon
+               cf-icon__after
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-right
+               a-btn__warning">
   Close
 </button> - Warning button
 
-<button class="a-btn a-btn__disabled a-btn_icon-position-right a-btn_icon__delete">
+<button class="cf-icon
+               cf-icon__after
+               cf-icon-delete
+               a-btn
+               a-btn_icon-position-right
+               a-btn__disabled">
   Close
 </button> - Disabled button

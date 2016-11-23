@@ -153,69 +153,105 @@ parent: "Components"
 ### Links with icons
 
 For more information, email
-<a class="a-link a-link__icon a-link__mail" href="#">
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-mail
+          a-link
+          a-link__icon"
+   href="#">
     <span class="a-link_text">john.smith@cfpb.gov</span>
 </a>.
 Alternatively, you can
-<a class="a-link a-link__icon a-link__download" href="#">
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-download
+          a-link
+          a-link__icon"
+   href="#">
     <span class="a-link_text">download the info sheet</span>
 </a>.
 Oh, you might also want to visit this
-<a class="a-link a-link__icon a-link__external-link" href="#">
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-external-link
+          a-link
+          a-link__icon"
+   href="#">
     <span class="a-link_text">other organization's website</span>
 </a> for further details.
 
 #### Links with icons on the left (modifier)
 
-<a class="a-link a-link__icon a-link__mail a-link__before" href="#">
+<a class="cf-icon
+          cf-icon__before
+          cf-icon-mail
+          a-link a-link__icon"
+    href="#">
     <span class="a-link_text">john.smith@cfpb.gov</span>
 </a><br>
-<a class="a-link a-link__icon a-link__phone a-link__before" href="#">
+<a class="cf-icon
+          cf-icon__before
+          cf-icon-phone
+          a-link
+          a-link__icon"
+   href="#">
     <span class="a-link_text">(123) 456-7890</span>
 </a>
 
 #### Non-wrapping icon links
 
 For more information, email
-<a class="a-link a-link__icon a-link__mail a-link__no-wrap" href="#">
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-mail
+          a-link
+          a-link__icon
+          a-link__no-wrap" href="#">
     <span class="a-link_text">john.smith@cfpb.gov</span>
 </a>.
 
 ### Jump link
 
-<a class="a-link
-          a-link__jump
-          a-link__right" href="#">
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-right
+          a-link
+          a-link__jump" href="#">
     <span class="a-link_text">Default jump link</span>
 </a>
 
 
 #### Jump link with large link modifier
 
-<a class="a-link
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-right
+          a-link
           a-link__jump
-          a-link__large
-          a-link__right" href="#">
+          a-link__large" href="#">
     <span class="a-link_text">Large jump link</span>
 </a>
 
 
 #### Jump link with before link modifier
 
-<a class="a-link
-          a-link__jump
-          a-link__before
-          a-link__left" href="#">
+<a class="cf-icon
+          cf-icon__before
+          cf-icon-left
+          a-link
+          a-link__jump" href="#">
     <span class="a-link_text">Jump link with icon on left</span>
 </a>
 
 
 #### Jump link with bg modifier (only visible on small screens)
 
-<a class="a-link
+<a class="cf-icon
+          cf-icon__after
+          cf-icon-right
+          a-link
           a-link__jump
-          a-link__bg
-          a-link__right" href="#">
+          a-link__bg" href="#">
     <span class="a-link_text">Jump link with grey background and
         solid borders on small screens</span>
 </a>
