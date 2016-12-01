@@ -5,51 +5,6 @@ parent: "Components"
 ---
 
 
-## Running Text
-
-### Micro copy
-
-<p class="a-micro-copy">
-    Lorem ipsum dolor sit amet
-</p>
-
-### Date
-
-<span class="a-date">
-    Nov 4, 2013
-</span>
-
-### Pull quote
-
-#### Default pull quote
-<aside class="m-pull-quote">
-    <p class="m-pull-quote_body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    </p>
-    <footer>
-        <cite class="m-pull-quote_citation">
-            - Author Name
-        </cite>
-    </footer>
-</aside>
-
-#### Large pull quote
-<aside class="m-pull-quote m-pull-quote__large">
-    <div class="m-pull-quote_body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cum corrupti tempora nam nihil qui mollitia consectetur
-        corporis nemo culpa dolorum!
-    </div>
-    <footer>
-        <cite class="m-pull-quote_citation">
-            - Author Name
-        </cite>
-    </footer>
-</aside>
-
-
 ## Headings
 
 ### Heading with icon
@@ -320,3 +275,48 @@ For more information, email
         <a class="m-list_link" href="#">List item 3</a>
     </li>
 </ul>
+
+## Miscellaneous Text
+
+### Micro copy
+
+<p class="a-micro-copy">
+    Lorem ipsum dolor sit amet
+</p>
+
+### Date
+
+<span class="a-date">
+    Nov 4, 2013
+</span>
+
+### Pull quote
+
+#### Default pull quote
+<aside class="m-pull-quote">
+    <p class="m-pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </p>
+    <footer>
+        <cite class="m-pull-quote_citation">
+            - Author Name
+        </cite>
+    </footer>
+</aside>
+
+#### Large pull quote
+<aside class="m-pull-quote m-pull-quote__large">
+    <div class="m-pull-quote_body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Cum corrupti tempora nam nihil qui mollitia consectetur
+        corporis nemo culpa dolorum!
+    </div>
+    <footer>
+        <cite class="m-pull-quote_citation">
+            - Author Name
+        </cite>
+    </footer>
+</aside>
+
