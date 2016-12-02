@@ -36,9 +36,6 @@ module.exports = {
     src:   loc.src + '/static/js/**/*.js',
     tests: loc.test
   },
-  clean: {
-    dest: [loc.dist, './_includes/usage/']
-  },
   styles: {
     cwd:      loc.src + '/static/css',
     src:      '/main.less',
@@ -84,21 +81,4 @@ module.exports = {
     }
   },
   components: glob.sync( loc.lib + '/cf-*' ),
-  usage: {
-    files: {
-      src: [
-        loc.lib + '/cf-buttons/usage.md',
-        loc.lib + '/cf-core/usage.md',
-        loc.lib + '/cf-expandables/usage.md',
-        loc.lib + '/cf-forms/usage.md',
-        loc.lib + '/cf-grid/usage.md',
-        loc.lib + '/cf-icons/usage.md',
-        loc.lib + '/cf-layout/usage.md',
-        loc.lib + '/cf-pagination/usage.md',
-        loc.lib + '/cf-typography/usage.md',
-        loc.lib + '/cf-tables/usage.md'
-      ],
-      dest: './_includes/usage/'
-    }
-  }
 };
