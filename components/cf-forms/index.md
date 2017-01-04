@@ -723,7 +723,7 @@ parent: "Components"
         </legend>
         <ul class="m-list m-list__unstyled content-l">
             <li class="content-l_col content-l_col-1-2">
-                <div class="m-field m-field__checkbox m-field__lg-target">
+                <div class="m-form-field m-form-field__checkbox m-form-field__lg-target">
                     <input class="a-checkbox"
                            type="checkbox"
                            name="form_drink"
@@ -735,7 +735,7 @@ parent: "Components"
                 </div>
             </li>
             <li class="content-l_col content-l_col-1-2">
-                <div class="m-field m-field__checkbox m-field__lg-target">
+                <div class="m-form-field m-form-field__checkbox m-form-field__lg-target">
                     <input class="a-checkbox"
                            type="checkbox"
                            name="form_drink"
@@ -755,7 +755,7 @@ parent: "Components"
         </legend>
         <ul class="m-list m-list__unstyled content-l">
             <li class="content-l_col content-l_col-1-2">
-                <div class="m-field m-field__radio m-field__lg-target">
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
                     <input class="a-radio"
                            type="radio"
                            name="form_breakfast"
@@ -767,7 +767,7 @@ parent: "Components"
                 </div>
             </li>
             <li class="content-l_col content-l_col-1-2">
-                <div class="m-field m-field__radio m-field__lg-target">
+                <div class="m-form-field m-form-field__radio m-form-field__lg-target">
                     <input class="a-radio"
                            type="radio"
                            name="form_breakfast"
