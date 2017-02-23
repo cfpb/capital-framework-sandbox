@@ -75,14 +75,41 @@ _Responsive text. Displays as a Heading 3 on large screens; displays at Heading 
 
 ### Body copy element vertical margins
 
-<p>Paragraph margin example</p>
-<p>Paragraph margin example</p>
+<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
 <ul>
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3</li>
+    <li>Astronomy compels the soul to look upward, and leads us from this world to another.</li>
+    <li>
+        Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Starring:
+        <ul>
+            <li>William Shatner as Captain James T. Kirk</li>
+            <li>Leonard Nimoy as Commander Spock</li>
+            <li>DeForest Kelley as Dr. Leonard McCoy, who is a doctor, not anything else, dammit, Jim!</li>
+        </ul>
+    </li>
+    <li>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</li>
+    <li>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</li>
+    <li>Where ignorance lurks, so too do the frontiers of discovery and imagination.</li>
 </ul>
-<p>Paragraph margin example</p>
+<p>And now let us settle in for a long winter's ordered list example:</p>
+<ol>
+    <li>Item the first</li>
+    <li>Item the second</li>
+    <li>
+        Item the third. This one has an unordered list nested inside of it!
+        <ul>
+            <li>Sub-bullet 1</li>
+            <li>Sub-bullet 2</li>
+            <li>Sub-bullet 3</li>
+        </ul>
+    </li>
+    <li>Item the fourth</li>
+    <li>Item the fifth</li>
+    <li>Item the can you tell we're trying to get to double digits?</li>
+    <li>Item the seventh</li>
+    <li>Item the eighth</li>
+    <li>Item the ninth</li>
+    <li>Item the tenth</li>
+</ol>
 
 - _Applies 15px bottom margin to all `p`, `ul`, `ol`, `dl`, `figure`, `table`, and `blockquote` elements._
 - _Applies -5px top margin to lists following paragraphs to reduce margin between them to 10px._
