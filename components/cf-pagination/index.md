@@ -4,72 +4,38 @@ title:  "cf-pagination"
 parent: "Components"
 ---
 
-## Original Documentation Markup
-<div class="u-mb30">
-  <nav class="pagination">
-      <a class="btn btn__super pagination_prev" href="#pagination_content">
-          <span class="btn_icon__left cf-icon cf-icon-left"></span>
-          Previous
-      </a>
-      <a class="btn btn__super pagination_next" href="#pagination_content">
-          Next
-          <span class="btn_icon__right cf-icon cf-icon-right"></span>
-      </a>
-      <form class="pagination_form" action="index.html#pagination_content">
-          <label class="pagination_label"
-                 for="pagination_current-page">
-              Page
-              <span class="u-visually-hidden">
-                  number out of 149 total pages
-              </span>
-          </label>
-          <input
-              class="pagination_current-page"
-              id="pagination_current-page"
-              name="pagination_current-page"
-              type="number" min="1" max="149"
-              value="149">
-          <span class="pagination_label">
-              <span aria-hidden="true">
-                  of 149
-              </span>
-          </span>
-          <button class="btn btn__link pagination_submit"
-                  id="pagination_submit"
-                  type="submit">
-              Go
-          </button>
-      </form>
-  </nav>
-</div>
 
 ## Atomic Documentation Markup
 
 <div class="u-mb30">
-  <nav class="m-pagination" role="navigation" aria-label="Pagination">
-      <a class="a-btn
-                a-btn_icon-position-left
-                a-btn_icon__left
-                m-pagination_btn-prev"
-         href="?page=1#o-filterable-list-controls">
-          Newer
-      </a>
-      <a class="a-btn
-                a-btn_icon-position-right
-                a-btn_icon__right
-                m-pagination_btn-next"
-         href="?page=3#o-filterable-list-controls">
-          Older
-      </a>
-      <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
-          <label class="m-pagination_label"
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev">
+            Newer
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next">
+            Older
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
                    for="m-pagination_current-page">
-              Page
-              <span class="u-visually-hidden">
-                  number 2 out
-              </span>
-              <input class="m-pagination_current-page"
+                Page
+                <span class="u-visually-hidden">
+                    number 1 out
+                </span>
+                <input class="m-pagination_current-page"
                        id="m-pagination_current-page"
                        name="page"
                        type="number"
@@ -77,19 +43,356 @@ parent: "Components"
                        max="149"
                        pattern="[0-9]*"
                        inputmode="numeric"
-                       value="2">
-              of 149
-          </label>
-          <button class="a-btn
-                         a-btn__link
-                         m-pagination_btn-submit"
+                       value="1">
+                of 1
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
                     id="m-pagination_btn-submit"
                     type="submit">Go</button>
-      </form>
-  </nav>
+        </form>
+    </nav>
 </div>
 
-## Live CFGov Markup (<a href="http://www.consumerfinance.gov/about-us/blog/">about-us/blog</a>)
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev">
+            Newer
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next"
+           href="?page=2#pagination_content">
+            Older
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 1 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="1">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev"
+           href="?page=21#pagination_content">
+            Newer
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next"
+           href="?page=23#pagination_content">
+            Older
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 22 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="22">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev"
+           href="?page=148#pagination_content">
+            Newer
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next">
+            Older
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 149 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="149">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev">
+            Previous
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next">
+            Next
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 1 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="1">
+                of 1
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev">
+            Previous
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next"
+           href="?page=2#pagination_content">
+            Next
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 1 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="1">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev"
+           href="?page=21#pagination_content">
+            Previous
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next"
+           href="?page=23#pagination_content">
+            Next
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 22 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="22">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+<div class="u-mb30">
+    <nav class="m-pagination" role="navigation" aria-label="Pagination">
+        <a class="a-btn
+                  a-btn__icon-on-left
+                  cf-icon
+                  cf-icon-left
+                  cf-icon__before
+                  m-pagination_btn-prev"
+           href="?page=148#pagination_content">
+            Previous
+        </a>
+        <a class="a-btn
+                  a-btn__icon-on-right
+                  a-btn__disabled
+                  cf-icon
+                  cf-icon-right
+                  cf-icon__after
+                  m-pagination_btn-next">
+            Next
+        </a>
+        <form class="m-pagination_form"
+              action="#pagination_content">
+            <label class="m-pagination_label"
+                   for="m-pagination_current-page">
+                Page
+                <span class="u-visually-hidden">
+                    number 149 out
+                </span>
+                <input class="m-pagination_current-page"
+                       id="m-pagination_current-page"
+                       name="page"
+                       type="number"
+                       min="1"
+                       max="149"
+                       pattern="[0-9]*"
+                       inputmode="numeric"
+                       value="149">
+                of 149
+            </label>
+            <button class="a-btn
+                           a-btn__link
+                           m-pagination_btn-submit"
+                    id="m-pagination_btn-submit"
+                    type="submit">Go</button>
+        </form>
+    </nav>
+</div>
+
+
+## Live CFGov Markup (<a href="https://www.consumerfinance.gov/about-us/blog/">about-us/blog</a>)
 
 ### First Page
 <div class="u-mb30">
@@ -104,10 +407,10 @@ parent: "Components"
         </a>
         <a class="btn
                   btn__super
-                  m-pagination_btn-next" href="?page=2#o-filterable-list-controls">Older
+                  m-pagination_btn-next" href="?page=2#pagination_content">Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
@@ -132,16 +435,16 @@ parent: "Components"
   <nav class="m-pagination" role="navigation" aria-label="Pagination">
         <a class="btn
                   btn__super
-                  m-pagination_btn-prev" href="?page=1#o-filterable-list-controls">
+                  m-pagination_btn-prev" href="?page=1#pagination_content">
             <span class="btn_icon__left cf-icon cf-icon-left"></span>
             Newer
         </a>
         <a class="btn
                   btn__super
-                  m-pagination_btn-next" href="?page=3#o-filterable-list-controls">Older
+                  m-pagination_btn-next" href="?page=3#pagination_content">Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
@@ -166,7 +469,7 @@ parent: "Components"
   <nav class="m-pagination" role="navigation" aria-label="Pagination">
         <a class="btn
                   btn__super
-                  m-pagination_btn-prev" href="?page=72#o-filterable-list-controls">
+                  m-pagination_btn-prev" href="?page=72#pagination_content">
             <span class="btn_icon__left cf-icon cf-icon-left"></span>
             Newer
         </a>
@@ -176,7 +479,7 @@ parent: "Components"
         Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
