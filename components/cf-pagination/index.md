@@ -28,7 +28,7 @@ parent: "Components"
             Older
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -72,11 +72,11 @@ parent: "Components"
                   cf-icon-right
                   cf-icon__after
                   m-pagination_btn-next"
-           href="?page=2#o-filterable-list-controls">
+           href="?page=2#pagination_content">
             Older
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -111,7 +111,7 @@ parent: "Components"
                   cf-icon-left
                   cf-icon__before
                   m-pagination_btn-prev"
-           href="?page=21#o-filterable-list-controls">
+           href="?page=21#pagination_content">
             Newer
         </a>
         <a class="a-btn
@@ -120,11 +120,11 @@ parent: "Components"
                   cf-icon-right
                   cf-icon__after
                   m-pagination_btn-next"
-           href="?page=23#o-filterable-list-controls">
+           href="?page=23#pagination_content">
             Older
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -159,7 +159,7 @@ parent: "Components"
                   cf-icon-left
                   cf-icon__before
                   m-pagination_btn-prev"
-           href="?page=148#o-filterable-list-controls">
+           href="?page=148#pagination_content">
             Newer
         </a>
         <a class="a-btn
@@ -172,7 +172,7 @@ parent: "Components"
             Older
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -220,7 +220,7 @@ parent: "Components"
             Next
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -264,11 +264,11 @@ parent: "Components"
                   cf-icon-right
                   cf-icon__after
                   m-pagination_btn-next"
-           href="?page=2#o-filterable-list-controls">
+           href="?page=2#pagination_content">
             Next
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -303,7 +303,7 @@ parent: "Components"
                   cf-icon-left
                   cf-icon__before
                   m-pagination_btn-prev"
-           href="?page=21#o-filterable-list-controls">
+           href="?page=21#pagination_content">
             Previous
         </a>
         <a class="a-btn
@@ -312,11 +312,11 @@ parent: "Components"
                   cf-icon-right
                   cf-icon__after
                   m-pagination_btn-next"
-           href="?page=23#o-filterable-list-controls">
+           href="?page=23#pagination_content">
             Next
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -351,7 +351,7 @@ parent: "Components"
                   cf-icon-left
                   cf-icon__before
                   m-pagination_btn-prev"
-           href="?page=148#o-filterable-list-controls">
+           href="?page=148#pagination_content">
             Previous
         </a>
         <a class="a-btn
@@ -364,7 +364,7 @@ parent: "Components"
             Next
         </a>
         <form class="m-pagination_form"
-              action="#o-filterable-list-controls">
+              action="#pagination_content">
             <label class="m-pagination_label"
                    for="m-pagination_current-page">
                 Page
@@ -407,10 +407,10 @@ parent: "Components"
         </a>
         <a class="btn
                   btn__super
-                  m-pagination_btn-next" href="?page=2#o-filterable-list-controls">Older
+                  m-pagination_btn-next" href="?page=2#pagination_content">Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
@@ -435,16 +435,16 @@ parent: "Components"
   <nav class="m-pagination" role="navigation" aria-label="Pagination">
         <a class="btn
                   btn__super
-                  m-pagination_btn-prev" href="?page=1#o-filterable-list-controls">
+                  m-pagination_btn-prev" href="?page=1#pagination_content">
             <span class="btn_icon__left cf-icon cf-icon-left"></span>
             Newer
         </a>
         <a class="btn
                   btn__super
-                  m-pagination_btn-next" href="?page=3#o-filterable-list-controls">Older
+                  m-pagination_btn-next" href="?page=3#pagination_content">Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
@@ -469,7 +469,7 @@ parent: "Components"
   <nav class="m-pagination" role="navigation" aria-label="Pagination">
         <a class="btn
                   btn__super
-                  m-pagination_btn-prev" href="?page=72#o-filterable-list-controls">
+                  m-pagination_btn-prev" href="?page=72#pagination_content">
             <span class="btn_icon__left cf-icon cf-icon-left"></span>
             Newer
         </a>
@@ -479,7 +479,7 @@ parent: "Components"
         Older
             <span class="btn_icon__right cf-icon cf-icon-right"></span>
         </a>
-        <form action="#o-filterable-list-controls">
+        <form action="#pagination_content">
             <label for="m-pagination_current-page">
                 Page
                 <span class="u-visually-hidden">
