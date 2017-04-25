@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-_site/
 
 # Packages #
 ############
@@ -19,6 +18,7 @@ _site/
 *.jar
 *.rar
 *.tar
+*.zip
 
 # Logs and databases #
 ######################
@@ -67,5 +67,10 @@ coverage.xml
 node_modules/
 bower_components/
 .grunt/
-vendor/
-static/vendor/
+
+# Jekyll stuff #
+################
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
